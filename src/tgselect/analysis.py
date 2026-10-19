@@ -206,7 +206,9 @@ def render_markdown(summary: dict, stage="e0") -> str:
     lines = [
         "## Material Passport", "", "- Origin Skill: experiment-agent", "- Origin Mode: run (offline analysis)",
         f"- Origin Date: {date}", "- Verification Status: ANALYZED (input provenance and replay verification external)",
-        "- Version Label: tgselect-analysis-v1", f"- Stage: {stage}",
+        "- Version Label: tgselect-analysis-v1",
+        "- Repro Lock: null (frozen configuration and input-hash receipts are provided separately)",
+        f"- Stage: {stage}",
         f"- Evidence Type: {summary['evidence_type']}", "",
         f"## {stage} 候选覆盖描述", "",
         f"N={summary['n_tasks']}；所有任务保留在分母，包括空候选池。结果为探索性描述。",
@@ -246,6 +248,7 @@ def render_markdown(summary: dict, stage="e0") -> str:
               "- Coverage 与 U 是候选集合内完美选择的潜力和救援上限；本次没有执行 E2 审核，不能解释为真实审核准确率或收益。",
               "- 随机分组先在每题内平均全部 20 个固定种子，再按题配对 bootstrap；种子×任务及矩阵单元均不是独立样本。每个种子的结果保留在 JSON。",
               f"- 95% percentile 区间使用 {summary['inference']['bootstrap_replicates']} 次任务重采样，seed={summary['inference']['seed']}。区间未作多重比较校正，仅用于探索；小样本和 E0 不支持确认性结论。",
+              "- 若样本中完全没有配对差异，经验 bootstrap 区间会退化为 [0,0]；这不能证明总体差异严格为零，也不能证明方法等效。",
               "- 所有比例使用完整 N；没有替代赢家包含空池。完整行相同盲区仅在原赢家错误且存在同完整行的正确候选时计数。Raw W 单列，集合大小不与 k=2 覆盖混用。",
               "- 输入来源、隐藏评测完整性及选择先于评测的冻结哈希需由运行 manifest 另行核验；分析函数不将缺失标签或缺失随机种子填成失败。"]
     if summary["evidence_type"] == "synthetic_unit_fixture":

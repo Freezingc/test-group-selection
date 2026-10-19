@@ -1,0 +1,163 @@
+{
+  "compact_files": {
+    "evaluation.receipt.json": {
+      "bytes": 1521,
+      "sha256": "5c89f68fe16d798c775e385cbd511ba233ca7636e7a00d4b943a4daecbd0c551"
+    },
+    "selections.manifest.json": {
+      "bytes": 664,
+      "sha256": "cc0d8c645a9dbc76ded40173fae079d3686e65c8ecbeef19409fbcb813b5e2aa"
+    },
+    "task_metrics.jsonl": {
+      "bytes": 271806,
+      "sha256": "806a9a5b3a6f66da756394eefc5b0618e5eab17dd308f24cdb0b039a2f12214b"
+    },
+    "tasks.manifest.json": {
+      "bytes": 1057,
+      "sha256": "86313a5ff79c19161c22ef4f33f3d9533991152951ad067705a3ce553bfb1fd7"
+    }
+  },
+  "cost": {
+    "gpu_monetary_cost_usd": null,
+    "paid_api_cost_usd": 0,
+    "scope": "Local inference; GPU hardware, electricity, allocation and monetary costs were not estimated and are not claimed to be zero"
+  },
+  "evidence_type": "natural_local_generation",
+  "generation": {
+    "backend_variants": [
+      {
+        "metadata": {
+          "attention_implementation": "sdpa",
+          "backend_version": "hf-autoregressive-v1",
+          "batch_size": 24,
+          "device": "cuda:0",
+          "dtype": "bfloat16",
+          "independent_per_request_rng": true,
+          "max_model_len": 8192,
+          "max_tokens": 2048,
+          "model_path": "/mnt/drug_db/zhangyudong/cache/huggingface/hub/models--Qwen--Qwen2.5-Coder-7B-Instruct/snapshots/c03e6d358207e414f1eca0bb1891e29f1db0e242",
+          "output_tokens_include_eos": true,
+          "position_ids": "attention_mask.cumsum(-1)-1; current token position for cached decode",
+          "temperature": 0.7,
+          "top_p": 0.95,
+          "top_p_boundary_tie_break": "descending logit then ascending token id",
+          "torch_version": "2.10.0+cu126",
+          "transformers_version": "5.13.0",
+          "vllm_output_equivalence": false
+        },
+        "requests": 480,
+        "sha256": "7e52023f849cff2b1f69ff9b367d62a4057684245a262b6acbcd044d0e6850ab"
+      }
+    ],
+    "candidate": {
+      "finish_reasons": {
+        "stop": 320
+      },
+      "input_tokens": 47760,
+      "output_tokens": 32443,
+      "requests": 320
+    },
+    "tests": {
+      "finish_reasons": {
+        "stop": 160
+      },
+      "input_tokens": 33488,
+      "output_tokens": 29198,
+      "requests": 160
+    },
+    "token_accounting": "Exact sum of recorded per-request tokenizer counts; EOS convention retained in backend metadata",
+    "total": {
+      "finish_reasons": {
+        "stop": 480
+      },
+      "input_tokens": 81248,
+      "output_tokens": 61641,
+      "requests": 480
+    }
+  },
+  "hash_chain": "validated; summary metrics independently recomputed from frozen task/selection/label inputs",
+  "model_id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "model_revision": "c03e6d358207e414f1eca0bb1891e29f1db0e242",
+  "n_tasks": 20,
+  "privacy": "Contains aggregate usage, candidate/source/row hashes, candidate correctness labels and selected IDs; no candidate source, model response, reference or hidden input content",
+  "processes": {
+    "actual_gpu_compute_seconds": null,
+    "gpu_associated_stage_elapsed_seconds": 146.76244335714728,
+    "gpu_memory_scope": "nvidia-smi whole-device memory.used; may include other processes; zero samples do not prove zero usage",
+    "max_phase_peak_process_tree_rss_bytes": 1683161088,
+    "peak_observed_device_memory_used_mib": 17663,
+    "phases": [
+      {
+        "elapsed_seconds": 22.281166004948318,
+        "end_utc": "2026-10-19T12:14:31.634821+00:00",
+        "exit_code": 0,
+        "gpu_index": null,
+        "gpu_monitor_degraded": false,
+        "peak_gpu_used_mib": 0,
+        "peak_process_tree_rss_bytes": 12529664,
+        "receipt": "evaluation.process.json",
+        "start_utc": "2026-10-19T12:14:09.353673+00:00",
+        "status": "completed"
+      },
+      {
+        "elapsed_seconds": 146.76244335714728,
+        "end_utc": "2026-10-19T12:09:58.023637+00:00",
+        "exit_code": 0,
+        "gpu_index": 2,
+        "gpu_monitor_degraded": false,
+        "peak_gpu_used_mib": 17663,
+        "peak_process_tree_rss_bytes": 1683161088,
+        "receipt": "generation.process.json",
+        "start_utc": "2026-10-19T12:07:31.261215+00:00",
+        "status": "completed"
+      },
+      {
+        "elapsed_seconds": 178.24808594584465,
+        "end_utc": "2026-10-19T12:13:13.092681+00:00",
+        "exit_code": 0,
+        "gpu_index": null,
+        "gpu_monitor_degraded": false,
+        "peak_gpu_used_mib": 0,
+        "peak_process_tree_rss_bytes": 270458880,
+        "receipt": "matrix.process.json",
+        "start_utc": "2026-10-19T12:10:14.844614+00:00",
+        "status": "completed"
+      },
+      {
+        "elapsed_seconds": 9.805392166599631,
+        "end_utc": "2026-10-19T12:13:50.839716+00:00",
+        "exit_code": 0,
+        "gpu_index": null,
+        "gpu_monitor_degraded": false,
+        "peak_gpu_used_mib": 0,
+        "peak_process_tree_rss_bytes": 12427264,
+        "receipt": "selection.process.json",
+        "start_utc": "2026-10-19T12:13:41.034343+00:00",
+        "status": "completed"
+      }
+    ],
+    "sum_phase_elapsed_seconds": 357.0970874745399,
+    "timing_scope": "Stage elapsed times may overlap; their sum is not a claim about total wall time or active GPU compute",
+    "wall_span_seconds": 420.373606
+  },
+  "schema_version": "tgselect-usage-v1",
+  "source_hashes": {
+    "/home/zhangyudong/FDU/paper/Eval/configs/e0-e1-v1.json": "ff38b4d4676c37cf4066e425c7f276aa3d2bc4e219f6cfb3ccedd1c8f141f9b7",
+    "evaluation.process.json": "1c4a43f8308c8aeb34d58e0a5a3859ef2335f408b0c6f8811aa0252c7a03c2c5",
+    "evaluation/labels.json": "56ddb82a9bf9e170da74ba7ab4e12b3523a2b611f7c03296f6a2018132749c12",
+    "evaluation/receipt.json": "5c89f68fe16d798c775e385cbd511ba233ca7636e7a00d4b943a4daecbd0c551",
+    "evaluation/samples_eval_results.json": "08cd6e6302c14b27dd14e634b3e1d230da8e5b0a7d01cfaeedf13ae46cfb72cb",
+    "generation.process.json": "0b32536b2623c47793ee7e3d9c6c59f7ee939a53c4a0909ae996aa9d75901335",
+    "inputs.manifest.json": "8a3a1ce8afe123177af0b9934d59716599fe9cb204c62fbcf9ba7b18f336bba8",
+    "matrix.process.json": "d5b00404c2b3e4b754724ddf528da910285cc858e08eb84919965b9f15d64d4f",
+    "raw/generation.jsonl": "48532e4df9b8deec112418a8afa3a3b1e450d14ca12b3daa7a7a7a5995583167",
+    "raw/selections.jsonl": "0ca87919a6fc967df80fb84d869f1fd32b66588007eacc4515213039f9dd3cb6",
+    "raw/selections.manifest.json": "cc0d8c645a9dbc76ded40173fae079d3686e65c8ecbeef19409fbcb813b5e2aa",
+    "raw/tasks.jsonl": "bad83068bef7698dedd53bd23debf422cf90b1111d7bd850012bdf43bde62fa3",
+    "raw/tasks.manifest.json": "86313a5ff79c19161c22ef4f33f3d9533991152951ad067705a3ce553bfb1fd7",
+    "selection.process.json": "a9165280ddfa10290f102184bcd86f282bccd14cfc58467114778af8739a87fb",
+    "summary.json": "b6b416f51d8bb3a31e73799321fad35056433bf1bd953e924d71df5c9d347bc0"
+  },
+  "split": "e0",
+  "status": "completed"
+}

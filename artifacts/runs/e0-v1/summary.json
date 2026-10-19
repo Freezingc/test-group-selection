@@ -1,0 +1,1769 @@
+{
+  "evidence_type": "natural_local_generation",
+  "frozen_config": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20261019,
+    "candidate_count": 16,
+    "dataset": "MBPP+",
+    "development_tasks": 160,
+    "evalplus_package": "0.3.1",
+    "generation_backend": "hf-autoregressive-v1",
+    "group_count": 8,
+    "matrix_workers": 8,
+    "max_model_len": 8192,
+    "max_tokens": 2048,
+    "model_id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "model_revision": "c03e6d358207e414f1eca0bb1891e29f1db0e242",
+    "paid_api_budget": 0,
+    "per_test_timeout_seconds": 0.5,
+    "pilot_tasks": 20,
+    "protocol_version": "e0-e1-v1",
+    "random_group_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "request_batch_size": 24,
+    "selectors": [
+      "uniform",
+      "aces_c",
+      "dedup_uniform",
+      "group_equal",
+      "group_rep"
+    ],
+    "stage": "E0-E1 exploratory; E2 not enabled",
+    "temperature": 0.7,
+    "tests_per_group": 8,
+    "top_p": 0.95
+  },
+  "inference": {
+    "bootstrap_replicates": 10000,
+    "confidence": 0.95,
+    "denominator": "all supplied task records, including empty pools",
+    "e2_review_executed": false,
+    "interval": "percentile",
+    "multiplicity": "Unadjusted descriptive intervals; no confirmatory significance claims",
+    "random_aggregation": "Mean across 20 fixed seeds within each task before paired task bootstrap",
+    "resampling_unit": "task",
+    "seed": 20261019,
+    "status": "exploratory"
+  },
+  "n_tasks": 20,
+  "pipeline_counts": {
+    "candidate_statuses": {
+      "usable": 320
+    },
+    "execution_statuses": {
+      "assertion_fail": 5752,
+      "pass": 11452,
+      "program_error": 2844
+    },
+    "test_parse_failures": 13,
+    "valid_tests": 1253
+  },
+  "pool": {
+    "candidate_count": {
+      "max": 16,
+      "mean": 16.0,
+      "min": 16,
+      "total": 320
+    },
+    "coverage": {
+      "n": 20,
+      "q": 17,
+      "rate": 0.85
+    },
+    "empty_pool": {
+      "n": 20,
+      "q": 0,
+      "rate": 0.0
+    },
+    "unique_source_count": {
+      "max": 16,
+      "mean": 14.85,
+      "min": 10,
+      "total": 297
+    }
+  },
+  "provenance": {
+    "artifacts/runs/e0-v1/evaluation/labels.json": "56ddb82a9bf9e170da74ba7ab4e12b3523a2b611f7c03296f6a2018132749c12",
+    "artifacts/runs/e0-v1/raw/selections.jsonl": "0ca87919a6fc967df80fb84d869f1fd32b66588007eacc4515213039f9dd3cb6",
+    "artifacts/runs/e0-v1/raw/tasks.jsonl": "bad83068bef7698dedd53bd23debf422cf90b1111d7bd850012bdf43bde62fa3",
+    "configs/e0-e1-v1.json": "ff38b4d4676c37cf4066e425c7f276aa3d2bc4e219f6cfb3ccedd1c8f141f9b7"
+  },
+  "schema_version": "tgselect-analysis-v1",
+  "selectors": {
+    "aces_c": {
+      "base_accuracy": {
+        "n": 20,
+        "q": 15,
+        "rate": 0.75
+      },
+      "mechanisms": {
+        "baseline_wrong_pool_correct": {
+          "n": 20,
+          "q": 2,
+          "rate": 0.1
+        },
+        "identical_row_blind_spot": {
+          "n": 20,
+          "q": 1,
+          "rate": 0.05
+        },
+        "no_alternative_winner": {
+          "n": 20,
+          "q": 18,
+          "rate": 0.9
+        }
+      },
+      "methods": {
+        "diverse": {
+          "coverage": {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75
+          },
+          "u": {
+            "n": 20,
+            "q": 0,
+            "rate": 0.0
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 5,
+              "rate": 0.25
+            }
+          }
+        },
+        "perturbed": {
+          "coverage": {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75
+          },
+          "u": {
+            "n": 20,
+            "q": 0,
+            "rate": 0.0
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 5,
+              "rate": 0.25
+            }
+          }
+        },
+        "top2": {
+          "coverage": {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75
+          },
+          "u": {
+            "n": 20,
+            "q": 0,
+            "rate": 0.0
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 5,
+              "rate": 0.25
+            }
+          }
+        }
+      },
+      "paired_differences": {
+        "perturbed_minus_diverse": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0,
+          "n": 20,
+          "q_difference": 0.0,
+          "unit": "task"
+        },
+        "perturbed_minus_random_mean": {
+          "ci95": [
+            -0.015000000000000003,
+            0.0
+          ],
+          "difference": -0.005,
+          "n": 20,
+          "q_difference": -0.1,
+          "unit": "task"
+        },
+        "perturbed_minus_top2": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0,
+          "n": 20,
+          "q_difference": 0.0,
+          "unit": "task"
+        }
+      },
+      "random": {
+        "coverage_by_seed": [
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 0
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 1
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 2
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 3
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 4
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 5
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 6
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 7
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 8
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 9
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 10
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 11
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 12
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 13
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 14
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 15
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 16
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 17
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 18
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 19
+          }
+        ],
+        "coverage_mean": {
+          "n": 20,
+          "q": 15.1,
+          "rate": 0.755
+        },
+        "coverage_seed_max": 0.8,
+        "coverage_seed_min": 0.75,
+        "coverage_seed_std": 0.015000000000000015,
+        "n_seeds": 20,
+        "q_interpretation": "Sum of per-task seed-mean coverage; fractional equivalent count, not extra tasks",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "raw_w": {
+        "coverage": {
+          "n": 20,
+          "q": 15,
+          "rate": 0.75
+        },
+        "unique_source_count": {
+          "max": 2,
+          "mean": 1.1,
+          "min": 1,
+          "total": 22
+        },
+        "untruncated": true
+      }
+    },
+    "dedup_uniform": {
+      "base_accuracy": {
+        "n": 20,
+        "q": 15,
+        "rate": 0.75
+      },
+      "mechanisms": {
+        "baseline_wrong_pool_correct": {
+          "n": 20,
+          "q": 2,
+          "rate": 0.1
+        },
+        "identical_row_blind_spot": {
+          "n": 20,
+          "q": 1,
+          "rate": 0.05
+        },
+        "no_alternative_winner": {
+          "n": 20,
+          "q": 16,
+          "rate": 0.8
+        }
+      },
+      "methods": {
+        "diverse": {
+          "coverage": {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75
+          },
+          "u": {
+            "n": 20,
+            "q": 0,
+            "rate": 0.0
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 5,
+              "rate": 0.25
+            }
+          }
+        },
+        "perturbed": {
+          "coverage": {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8
+          },
+          "u": {
+            "n": 20,
+            "q": 1,
+            "rate": 0.05
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 1,
+              "rate": 0.05
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 4,
+              "rate": 0.2
+            }
+          }
+        },
+        "top2": {
+          "coverage": {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75
+          },
+          "u": {
+            "n": 20,
+            "q": 0,
+            "rate": 0.0
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 5,
+              "rate": 0.25
+            }
+          }
+        }
+      },
+      "paired_differences": {
+        "perturbed_minus_diverse": {
+          "ci95": [
+            0.0,
+            0.15
+          ],
+          "difference": 0.05,
+          "n": 20,
+          "q_difference": 1.0,
+          "unit": "task"
+        },
+        "perturbed_minus_random_mean": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0,
+          "n": 20,
+          "q_difference": 0.0,
+          "unit": "task"
+        },
+        "perturbed_minus_top2": {
+          "ci95": [
+            0.0,
+            0.15
+          ],
+          "difference": 0.05,
+          "n": 20,
+          "q_difference": 1.0,
+          "unit": "task"
+        }
+      },
+      "random": {
+        "coverage_by_seed": [
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 0
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 1
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 2
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 3
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 4
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 5
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 6
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 7
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 8
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 9
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 10
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 11
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 12
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 13
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 14
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 15
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 16
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 17
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 18
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 19
+          }
+        ],
+        "coverage_mean": {
+          "n": 20,
+          "q": 16,
+          "rate": 0.8
+        },
+        "coverage_seed_max": 0.8,
+        "coverage_seed_min": 0.8,
+        "coverage_seed_std": 1.1102230246251565e-16,
+        "n_seeds": 20,
+        "q_interpretation": "Sum of per-task seed-mean coverage; fractional equivalent count, not extra tasks",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "raw_w": {
+        "coverage": {
+          "n": 20,
+          "q": 16,
+          "rate": 0.8
+        },
+        "unique_source_count": {
+          "max": 2,
+          "mean": 1.2,
+          "min": 1,
+          "total": 24
+        },
+        "untruncated": true
+      }
+    },
+    "group_equal": {
+      "base_accuracy": {
+        "n": 20,
+        "q": 15,
+        "rate": 0.75
+      },
+      "mechanisms": {
+        "baseline_wrong_pool_correct": {
+          "n": 20,
+          "q": 2,
+          "rate": 0.1
+        },
+        "identical_row_blind_spot": {
+          "n": 20,
+          "q": 1,
+          "rate": 0.05
+        },
+        "no_alternative_winner": {
+          "n": 20,
+          "q": 18,
+          "rate": 0.9
+        }
+      },
+      "methods": {
+        "diverse": {
+          "coverage": {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75
+          },
+          "u": {
+            "n": 20,
+            "q": 0,
+            "rate": 0.0
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 5,
+              "rate": 0.25
+            }
+          }
+        },
+        "perturbed": {
+          "coverage": {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75
+          },
+          "u": {
+            "n": 20,
+            "q": 0,
+            "rate": 0.0
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 5,
+              "rate": 0.25
+            }
+          }
+        },
+        "top2": {
+          "coverage": {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75
+          },
+          "u": {
+            "n": 20,
+            "q": 0,
+            "rate": 0.0
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 5,
+              "rate": 0.25
+            }
+          }
+        }
+      },
+      "paired_differences": {
+        "perturbed_minus_diverse": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0,
+          "n": 20,
+          "q_difference": 0.0,
+          "unit": "task"
+        },
+        "perturbed_minus_random_mean": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0,
+          "n": 20,
+          "q_difference": 0.0,
+          "unit": "task"
+        },
+        "perturbed_minus_top2": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0,
+          "n": 20,
+          "q_difference": 0.0,
+          "unit": "task"
+        }
+      },
+      "random": {
+        "coverage_by_seed": [
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 0
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 1
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 2
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 3
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 4
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 5
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 6
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 7
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 8
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 9
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 10
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 11
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 12
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 13
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 14
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 15
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 16
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 17
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 18
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 19
+          }
+        ],
+        "coverage_mean": {
+          "n": 20,
+          "q": 15,
+          "rate": 0.75
+        },
+        "coverage_seed_max": 0.75,
+        "coverage_seed_min": 0.75,
+        "coverage_seed_std": 0.0,
+        "n_seeds": 20,
+        "q_interpretation": "Sum of per-task seed-mean coverage; fractional equivalent count, not extra tasks",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "raw_w": {
+        "coverage": {
+          "n": 20,
+          "q": 15,
+          "rate": 0.75
+        },
+        "unique_source_count": {
+          "max": 2,
+          "mean": 1.1,
+          "min": 1,
+          "total": 22
+        },
+        "untruncated": true
+      }
+    },
+    "group_rep": {
+      "base_accuracy": {
+        "n": 20,
+        "q": 14,
+        "rate": 0.7
+      },
+      "mechanisms": {
+        "baseline_wrong_pool_correct": {
+          "n": 20,
+          "q": 3,
+          "rate": 0.15
+        },
+        "identical_row_blind_spot": {
+          "n": 20,
+          "q": 1,
+          "rate": 0.05
+        },
+        "no_alternative_winner": {
+          "n": 20,
+          "q": 17,
+          "rate": 0.85
+        }
+      },
+      "methods": {
+        "diverse": {
+          "coverage": {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75
+          },
+          "u": {
+            "n": 20,
+            "q": 1,
+            "rate": 0.05
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 5,
+              "rate": 0.25
+            }
+          }
+        },
+        "perturbed": {
+          "coverage": {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75
+          },
+          "u": {
+            "n": 20,
+            "q": 1,
+            "rate": 0.05
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 5,
+              "rate": 0.25
+            }
+          }
+        },
+        "top2": {
+          "coverage": {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75
+          },
+          "u": {
+            "n": 20,
+            "q": 1,
+            "rate": 0.05
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 5,
+              "rate": 0.25
+            }
+          }
+        }
+      },
+      "paired_differences": {
+        "perturbed_minus_diverse": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0,
+          "n": 20,
+          "q_difference": 0.0,
+          "unit": "task"
+        },
+        "perturbed_minus_random_mean": {
+          "ci95": [
+            -0.075,
+            0.0
+          ],
+          "difference": -0.025,
+          "n": 20,
+          "q_difference": -0.5,
+          "unit": "task"
+        },
+        "perturbed_minus_top2": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0,
+          "n": 20,
+          "q_difference": 0.0,
+          "unit": "task"
+        }
+      },
+      "random": {
+        "coverage_by_seed": [
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 0
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 1
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 2
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 3
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 4
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 5
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 6
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 7
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 8
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 9
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 10
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 11
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 12
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 13
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 14
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 15
+          },
+          {
+            "n": 20,
+            "q": 16,
+            "rate": 0.8,
+            "seed": 16
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 17
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 18
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 19
+          }
+        ],
+        "coverage_mean": {
+          "n": 20,
+          "q": 15.5,
+          "rate": 0.775
+        },
+        "coverage_seed_max": 0.8,
+        "coverage_seed_min": 0.75,
+        "coverage_seed_std": 0.02500000000000002,
+        "n_seeds": 20,
+        "q_interpretation": "Sum of per-task seed-mean coverage; fractional equivalent count, not extra tasks",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "raw_w": {
+        "coverage": {
+          "n": 20,
+          "q": 14,
+          "rate": 0.7
+        },
+        "unique_source_count": {
+          "max": 2,
+          "mean": 1.15,
+          "min": 1,
+          "total": 23
+        },
+        "untruncated": true
+      }
+    },
+    "uniform": {
+      "base_accuracy": {
+        "n": 20,
+        "q": 15,
+        "rate": 0.75
+      },
+      "mechanisms": {
+        "baseline_wrong_pool_correct": {
+          "n": 20,
+          "q": 2,
+          "rate": 0.1
+        },
+        "identical_row_blind_spot": {
+          "n": 20,
+          "q": 1,
+          "rate": 0.05
+        },
+        "no_alternative_winner": {
+          "n": 20,
+          "q": 18,
+          "rate": 0.9
+        }
+      },
+      "methods": {
+        "diverse": {
+          "coverage": {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75
+          },
+          "u": {
+            "n": 20,
+            "q": 0,
+            "rate": 0.0
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 5,
+              "rate": 0.25
+            }
+          }
+        },
+        "perturbed": {
+          "coverage": {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75
+          },
+          "u": {
+            "n": 20,
+            "q": 0,
+            "rate": 0.0
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 5,
+              "rate": 0.25
+            }
+          }
+        },
+        "top2": {
+          "coverage": {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75
+          },
+          "u": {
+            "n": 20,
+            "q": 0,
+            "rate": 0.0
+          },
+          "vs_top2": {
+            "both": {
+              "n": 20,
+              "q": 15,
+              "rate": 0.75
+            },
+            "gain": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "loss": {
+              "n": 20,
+              "q": 0,
+              "rate": 0.0
+            },
+            "neither": {
+              "n": 20,
+              "q": 5,
+              "rate": 0.25
+            }
+          }
+        }
+      },
+      "paired_differences": {
+        "perturbed_minus_diverse": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0,
+          "n": 20,
+          "q_difference": 0.0,
+          "unit": "task"
+        },
+        "perturbed_minus_random_mean": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0,
+          "n": 20,
+          "q_difference": 0.0,
+          "unit": "task"
+        },
+        "perturbed_minus_top2": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0,
+          "n": 20,
+          "q_difference": 0.0,
+          "unit": "task"
+        }
+      },
+      "random": {
+        "coverage_by_seed": [
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 0
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 1
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 2
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 3
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 4
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 5
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 6
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 7
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 8
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 9
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 10
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 11
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 12
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 13
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 14
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 15
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 16
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 17
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 18
+          },
+          {
+            "n": 20,
+            "q": 15,
+            "rate": 0.75,
+            "seed": 19
+          }
+        ],
+        "coverage_mean": {
+          "n": 20,
+          "q": 15,
+          "rate": 0.75
+        },
+        "coverage_seed_max": 0.75,
+        "coverage_seed_min": 0.75,
+        "coverage_seed_std": 0.0,
+        "n_seeds": 20,
+        "q_interpretation": "Sum of per-task seed-mean coverage; fractional equivalent count, not extra tasks",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "raw_w": {
+        "coverage": {
+          "n": 20,
+          "q": 15,
+          "rate": 0.75
+        },
+        "unique_source_count": {
+          "max": 2,
+          "mean": 1.1,
+          "min": 1,
+          "total": 22
+        },
+        "untruncated": true
+      }
+    }
+  },
+  "verification": {
+    "external_receipt": "not_provided",
+    "hash_chain": "validated",
+    "status": "ANALYZED"
+  }
+}

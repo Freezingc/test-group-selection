@@ -1,0 +1,34 @@
+{
+  "evaluation_receipt_sha256": "5c89f68fe16d798c775e385cbd511ba233ca7636e7a00d4b943a4daecbd0c551",
+  "inputs": {
+    "artifacts/runs/e0-v1/evaluation/labels.json": "56ddb82a9bf9e170da74ba7ab4e12b3523a2b611f7c03296f6a2018132749c12",
+    "artifacts/runs/e0-v1/raw/selections.jsonl": "0ca87919a6fc967df80fb84d869f1fd32b66588007eacc4515213039f9dd3cb6",
+    "artifacts/runs/e0-v1/raw/tasks.jsonl": "bad83068bef7698dedd53bd23debf422cf90b1111d7bd850012bdf43bde62fa3",
+    "configs/e0-e1-v1.json": "ff38b4d4676c37cf4066e425c7f276aa3d2bc4e219f6cfb3ccedd1c8f141f9b7"
+  },
+  "matrix_manifest_sha256": "86313a5ff79c19161c22ef4f33f3d9533991152951ad067705a3ce553bfb1fd7",
+  "planned_task_ids": [
+    "Mbpp/446",
+    "Mbpp/274",
+    "Mbpp/478",
+    "Mbpp/282",
+    "Mbpp/100",
+    "Mbpp/422",
+    "Mbpp/294",
+    "Mbpp/752",
+    "Mbpp/245",
+    "Mbpp/793",
+    "Mbpp/309",
+    "Mbpp/435",
+    "Mbpp/772",
+    "Mbpp/462",
+    "Mbpp/166",
+    "Mbpp/392",
+    "Mbpp/737",
+    "Mbpp/120",
+    "Mbpp/312",
+    "Mbpp/751"
+  ],
+  "selection_manifest_sha256": "cc0d8c645a9dbc76ded40173fae079d3686e65c8ecbeef19409fbcb813b5e2aa",
+  "status": "completed"
+}

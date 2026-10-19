@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "command": [
+        ".local/eval-venv/bin/python",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--tb=short"
+      ],
+      "exit_code": 0,
+      "seconds": 2.8000723607838154,
+      "stdout": "........................................................................ [ 61%]\n.............................................                            [100%]\n117 passed, 1 skipped in 2.53s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        ".local/generation-venv/bin/python",
+        "-m",
+        "pytest",
+        "tests/test_hf_backend.py",
+        "-q",
+        "--tb=short"
+      ],
+      "exit_code": 0,
+      "seconds": 4.146418340038508,
+      "stdout": "...............                                                          [100%]\n15 passed in 3.12s\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "unit/integration checks including actual sandbox and official kernel; not a full natural experiment replication"
+}

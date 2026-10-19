@@ -1,0 +1,13 @@
+{
+  "status": "frozen_before_first_natural_generation",
+  "config_sha256": "ff38b4d4676c37cf4066e425c7f276aa3d2bc4e219f6cfb3ccedd1c8f141f9b7",
+  "source_commit_before_hidden_e0_evaluation": "898cdea36b93e14666b5800072320ebfa3da52ef",
+  "report_sha256": "60ef2ace60b6112418332a0e6284ea198e29cbc0875944b35a19d61c83c61f39",
+  "scope": "E0 engineering20 plus E1 exploratory140; E0 excluded from E1",
+  "post_e0_sampling_or_selector_changes": false,
+  "formal_preregistration": false,
+  "recorded_utc": "2026-10-19T12:24:52.543094+00:00",
+  "record_origin": "Retrospective receipt after E0; config hash matches the first recorded natural request. Git source was committed before E0 hidden evaluation and E1 generation.",
+  "first_natural_request": "Mbpp/446/candidate/00",
+  "first_natural_request_config_sha256": "ff38b4d4676c37cf4066e425c7f276aa3d2bc4e219f6cfb3ccedd1c8f141f9b7"
+}

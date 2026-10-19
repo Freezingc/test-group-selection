@@ -1,0 +1,26 @@
+{
+  "command": [
+    ".local/eval-venv/bin/python",
+    "-m",
+    "tgselect.experiment",
+    "select",
+    "--tasks",
+    "artifacts/runs/e0-v1/raw/tasks.jsonl",
+    "--config",
+    "configs/e0-e1-v1.json",
+    "--output",
+    "artifacts/runs/e0-v1/raw/selections.jsonl"
+  ],
+  "cwd": "/home/zhangyudong/FDU/paper/Eval",
+  "start_utc": "2026-10-19T12:13:41.034343+00:00",
+  "status": "completed",
+  "timeout_seconds": 600,
+  "log": ".local/e0-selection.log",
+  "peak_process_tree_rss_bytes": 12427264,
+  "gpu_index": null,
+  "peak_gpu_used_mib": 0,
+  "pid": 3918699,
+  "elapsed_seconds": 9.805392166599631,
+  "exit_code": 0,
+  "end_utc": "2026-10-19T12:13:50.839716+00:00"
+}

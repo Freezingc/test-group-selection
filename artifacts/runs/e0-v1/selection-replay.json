@@ -1,0 +1,6 @@
+{
+  "status": "exact_match",
+  "original_sha256": "0ca87919a6fc967df80fb84d869f1fd32b66588007eacc4515213039f9dd3cb6",
+  "replay_sha256": "0ca87919a6fc967df80fb84d869f1fd32b66588007eacc4515213039f9dd3cb6",
+  "scope": "deterministic selection only; no independent stochastic generation rerun"
+}

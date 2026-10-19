@@ -4,6 +4,12 @@ An exploratory implementation of **Selecting Candidates for Verification through
 
 The starting research report is in [docs/research/research-report.md](docs/research/research-report.md). It contains hypotheses, not established results. The authorized first implementation covers E0–E1; no paid API auditor or E2 benefit is assumed.
 
+The completed E0 engineering run is in [artifacts/runs/e0-v1/results.md](artifacts/runs/e0-v1/results.md). Its 20 tasks are excluded from E1. Compact per-task indicators and their SHA-256 receipts are committed; all 15 paired coverage comparisons can be recomputed without loading a model or accessing hidden benchmark inputs:
+
+```bash
+.local/eval-venv/bin/python scripts/check_compact_results.py --run-dir artifacts/runs/e0-v1
+```
+
 ## Protocol
 
 - Official EvalPlus 0.3.1 checking kernel / MBPP+ v0.2.0, pinned content hash. A trusted supervisor and per-suite bubblewrap wrapper replace the original CLI's shared execution directory.
@@ -64,6 +70,8 @@ CUDA_VISIBLE_DEVICES=2 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 \
 ```
 
 Replay `select` to a new output and compare SHA-256 hashes; generated programs do not need to run again for a selection replay. Resume generation is explicit and validates full request identity. Crashed runs retain receipts and require diagnosis before continuation.
+
+After all stages complete, run `scripts/finalize_run.py --run-dir artifacts/runs/e0-v1` with the evaluation interpreter. It checks the hash chain and re-derives summary metrics, then exports usage, task indicators and compact receipts. Resource peaks are observations sampled roughly every 30 seconds; short-lived peaks can be missed.
 
 After a reliable E0, repeat with `--split e1` and a new run directory. Keep E0 out of the E1 inference denominator. Every comparison uses whole tasks as the sampling unit, with task-paired intervals; the 20 random seeds are averaged within each task before bootstrap.
 

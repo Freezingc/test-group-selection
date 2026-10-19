@@ -1,0 +1,32 @@
+{
+  "command": [
+    ".local/eval-venv/bin/python",
+    "-m",
+    "tgselect.experiment",
+    "evaluate",
+    "--tasks",
+    "artifacts/runs/e0-v1/raw/tasks.jsonl",
+    "--selections",
+    "artifacts/runs/e0-v1/raw/selections.jsonl",
+    "--config",
+    "configs/e0-e1-v1.json",
+    "--snapshot",
+    ".local/dataset/private/mbppplus.jsonl",
+    "--output-dir",
+    "artifacts/runs/e0-v1/evaluation",
+    "--timeout",
+    "1770"
+  ],
+  "cwd": "/home/zhangyudong/FDU/paper/Eval",
+  "start_utc": "2026-10-19T12:14:09.353673+00:00",
+  "status": "completed",
+  "timeout_seconds": 1800,
+  "log": ".local/e0-evaluation.log",
+  "peak_process_tree_rss_bytes": 12529664,
+  "gpu_index": null,
+  "peak_gpu_used_mib": 0,
+  "pid": 3919552,
+  "elapsed_seconds": 22.281166004948318,
+  "exit_code": 0,
+  "end_utc": "2026-10-19T12:14:31.634821+00:00"
+}
