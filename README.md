@@ -6,9 +6,9 @@ The starting research report is in [docs/research/research-report.md](docs/resea
 
 ## Protocol
 
-- Official EvalPlus 0.3.1 / MBPP+ v0.2.0, pinned content hash.
+- Official EvalPlus 0.3.1 checking kernel / MBPP+ v0.2.0, pinned content hash. A trusted supervisor and per-suite bubblewrap wrapper replace the original CLI's shared execution directory.
 - Hash-selected 160-task development pool: 20 E0 engineering tasks, 140 E1 exploratory tasks. Remaining 218 tasks and HumanEval+ are reserved.
-- Qwen2.5-Coder-7B-Instruct revision `c03e6d358207e414f1eca0bb1891e29f1db0e242`; 16 program samples and 8 independently seeded requests for up to 8 tests each per task.
+- Qwen2.5-Coder-7B-Instruct revision `c03e6d358207e414f1eca0bb1891e29f1db0e242`; 16 program samples and 8 independently seeded requests for up to 8 tests each per task. Local Hugging Face autoregressive decoding uses separate RNG streams per request; it is not expected to reproduce vLLM outputs.
 - Five base selectors: uniform, ACES-C, execution-column deduplication, equal group weight and one representative per group.
 - Compare source-distinct Top-2, behavioral diversity, source-group perturbation and 20 size-matched random grouping seeds. Random grouping changes deletions only; it preserves each base selector and its original winner.
 - Exact ACES-C integer-equivalent weights; common deterministic candidate hash ties. Constant columns, zero-weight fallback and protocol differences are documented.
@@ -18,17 +18,20 @@ The starting research report is in [docs/research/research-report.md](docs/resea
 
 ## Environment
 
-Linux with unprivileged user namespaces and `bubblewrap` is required for execution. Model generation needs one available GPU; the initial experiment uses an A800. Installation is isolated in `.venv`:
+Linux with unprivileged user namespaces and `bubblewrap` is required for execution. Model generation needs one available GPU; the initial experiment uses an A800. Keep Python 3.11 execution/evaluation separate from Python 3.12 generation:
 
 ```bash
-uv venv --python 3.11 .venv
-uv pip install --python .venv/bin/python -e '.[dev,generation]'
-.venv/bin/python -m pytest -q
-.venv/bin/python scripts/prepare_dataset.py
-HF_HUB_DISABLE_XET=1 .venv/bin/python scripts/download_model.py
+uv venv --python 3.11 .local/eval-venv
+uv pip install --python .local/eval-venv/bin/python -e '.[dev]'
+uv venv --python 3.12 .local/generation-venv
+uv pip install --python .local/generation-venv/bin/python -e '.[dev,generation]'
+.local/eval-venv/bin/python -m pytest -q
+.local/generation-venv/bin/python -m pytest tests/test_hf_backend.py -q
+.local/eval-venv/bin/python scripts/prepare_dataset.py --output .local/dataset
+HF_HUB_DISABLE_XET=1 .local/generation-venv/bin/python scripts/download_model.py
 ```
 
-The environment lock and resource receipts are saved alongside completed experiments. If a host cannot create namespaces, execution fails as infrastructure failure; it does not silently run unsandboxed.
+The actual run reused an existing owned PyTorch environment through `--system-site-packages`; exact versions are in `artifacts/environment/generation.json`. Evaluation dependencies are recorded in `artifacts/environment/requirements-evaluation.txt`. If a host cannot create namespaces, execution fails as infrastructure failure.
 
 ## Run E0
 
@@ -37,20 +40,24 @@ Read the downloaded model path from `.local/model-path.txt` and supply it below.
 ```bash
 mkdir -p artifacts/runs/e0-v1/raw
 CUDA_VISIBLE_DEVICES=2 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 \
-  timeout --kill-after=30s 3600 .venv/bin/python -m tgselect.generation \
+  .local/eval-venv/bin/python scripts/run_monitored.py \
+  --receipt artifacts/runs/e0-v1/generation.process.json \
+  --log .local/e0-generation.log --timeout 3600 --gpu 2 -- \
+  .local/generation-venv/bin/python -m tgselect.generation \
   --views .local/dataset/public/views.jsonl --config configs/e0-e1-v1.json \
   --split e0 --model-path /absolute/path/from/model-path.txt \
   --output artifacts/runs/e0-v1/raw/generation.jsonl
-.venv/bin/python -m tgselect.experiment matrix \
+.local/eval-venv/bin/python -m tgselect.experiment matrix \
   --views .local/dataset/public/views.jsonl --generation artifacts/runs/e0-v1/raw/generation.jsonl \
   --config configs/e0-e1-v1.json --split e0 --output artifacts/runs/e0-v1/raw/tasks.jsonl
-.venv/bin/python -m tgselect.experiment select \
+.local/eval-venv/bin/python -m tgselect.experiment select \
   --tasks artifacts/runs/e0-v1/raw/tasks.jsonl --config configs/e0-e1-v1.json \
   --output artifacts/runs/e0-v1/raw/selections.jsonl
-.venv/bin/python -m tgselect.experiment evaluate \
+.local/eval-venv/bin/python -m tgselect.experiment evaluate \
   --tasks artifacts/runs/e0-v1/raw/tasks.jsonl --snapshot .local/dataset/private/mbppplus.jsonl \
+  --selections artifacts/runs/e0-v1/raw/selections.jsonl --config configs/e0-e1-v1.json \
   --output-dir artifacts/runs/e0-v1/evaluation
-.venv/bin/python -m tgselect.experiment analyse \
+.local/eval-venv/bin/python -m tgselect.experiment analyse \
   --tasks artifacts/runs/e0-v1/raw/tasks.jsonl --selections artifacts/runs/e0-v1/raw/selections.jsonl \
   --labels artifacts/runs/e0-v1/evaluation/labels.json --config configs/e0-e1-v1.json \
   --output-dir artifacts/runs/e0-v1

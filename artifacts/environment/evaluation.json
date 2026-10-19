@@ -1,0 +1,15 @@
+{
+  "python": "3.11.4 (main, Jul  5 2023, 13:45:01) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-191-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "evalplus": "0.3.1",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "transformers": "5.20.1",
+    "pytest": "8.4.2",
+    "psutil": "7.2.2",
+    "tree-sitter": "0.26.0",
+    "tree-sitter-python": "0.25.0"
+  },
+  "gpu_inventory": "0, NVIDIA A800 80GB PCIe, 560.35.03, 81920 MiB\n1, NVIDIA A800 80GB PCIe, 560.35.03, 81920 MiB\n2, NVIDIA A800 80GB PCIe, 560.35.03, 81920 MiB\n3, NVIDIA A800 80GB PCIe, 560.35.03, 81920 MiB\n"
+}

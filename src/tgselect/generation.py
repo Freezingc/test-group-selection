@@ -117,16 +117,14 @@ def main():
     if not pending:
         print(json.dumps({'status': 'already_complete', 'requests': len(done)}), flush=True)
         return
-    from vllm import LLM, SamplingParams
-    llm = LLM(model=str(args.model_path), tokenizer=str(args.model_path),
-              dtype='bfloat16', tensor_parallel_size=1, max_model_len=config['max_model_len'],
-              gpu_memory_utilization=config['gpu_memory_utilization'], max_num_seqs=64,
-              enforce_eager=True, enable_prefix_caching=True, seed=42,
-              trust_remote_code=False)
-    tokenizer = llm.get_tokenizer()
+    from .hf_backend import HFBackend
+    backend = HFBackend(args.model_path, config)
+    tokenizer = backend.tokenizer
     runtime = {
         'model_id': config['model_id'], 'model_revision': config['model_revision'],
         'config_sha256': hashlib.sha256(args.config.read_bytes()).hexdigest(),
+        'generation_backend': config['generation_backend'],
+        'backend_metadata': backend.metadata,
         'generation_parameters': {key: config[key] for key in ['temperature', 'top_p', 'max_tokens']},
     }
     started = time.monotonic()
@@ -136,15 +134,9 @@ def main():
             prompts = [tokenizer.apply_chat_template(
                 [{'role': 'user', 'content': request['prompt']}], tokenize=False,
                 add_generation_prompt=True) for request in batch]
-            params = [SamplingParams(temperature=config['temperature'], top_p=config['top_p'],
-                                     max_tokens=config['max_tokens'], seed=request['seed']) for request in batch]
-            outputs = llm.generate(prompts, params, use_tqdm=False)
+            outputs = backend.generate(prompts, [request['seed'] for request in batch])
             for request, output in zip(batch, outputs, strict=True):
-                completion = output.outputs[0]
-                record = {**request, **runtime, 'response': completion.text,
-                          'finish_reason': completion.finish_reason,
-                          'input_tokens': len(output.prompt_token_ids),
-                          'output_tokens': len(completion.token_ids),
+                record = {**request, **runtime, **output,
                           'elapsed_seconds_at_receipt': time.monotonic() - started}
                 stream.write(json.dumps(record, ensure_ascii=False) + '\n')
             stream.flush()

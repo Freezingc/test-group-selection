@@ -1,0 +1,16 @@
+{
+  "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:38:16) [GCC 14.3.0]",
+  "platform": "Linux-5.15.0-191-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": "2.10.0+cu126",
+    "transformers": "5.13.0",
+    "accelerate": "1.14.0",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "huggingface-hub": "1.23.0"
+  },
+  "cuda_visible_devices": "2",
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "paid_api_cost": 0
+}

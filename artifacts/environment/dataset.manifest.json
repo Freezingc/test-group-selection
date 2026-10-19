@@ -1,0 +1,40 @@
+{
+  "adapter_exclusions": [],
+  "adapter_version": "mbpp-public-v1",
+  "counts": {
+    "e0": 20,
+    "e1": 140,
+    "excluded": 0,
+    "heldout": 218,
+    "supported": 378,
+    "total": 378
+  },
+  "dataset": "MBPP+",
+  "dataset_version": "v0.2.0",
+  "exclusion_rule": "Before sampling: missing/non-string public fields, invalid entry identifier, non-docstring-only prompt, absent/inconsistent public call arity, or keyword/starred calls. No evaluation-performance exclusions.",
+  "files": {
+    "private/mbppplus.jsonl": {
+      "bytes": 2592369,
+      "sha256": "b54e762755248ca411b523c917fa9f93c07b5ff2966bf60b3917b853926a3dad"
+    },
+    "public/views.jsonl": {
+      "bytes": 143023,
+      "sha256": "cd695e9cdb25aa5c364bbc7fd9d0e88b244281bac1a37b4a85fac6a1cc70df7a"
+    }
+  },
+  "interface_rule": "Preserve original public prompt; infer consistent positional arity only from its public assertions and append generic arg0, arg1, ... signature. Do not inspect canonical_solution, input contract, hidden inputs, tolerance or hidden labels.",
+  "official_md5": "ee43ecabebf20deef4bb776a405ac5b1",
+  "package_version": "0.3.1",
+  "public_fields": [
+    "task_id",
+    "prompt",
+    "entry_point",
+    "split"
+  ],
+  "sampling": {
+    "pilot": 20,
+    "total": 160
+  },
+  "source_url": "https://github.com/evalplus/mbppplus_release/releases/download/v0.2.0/MbppPlus.jsonl.gz",
+  "split_rule": "Among structurally supported tasks, sort ascending SHA256('tgselect-v1:' + task_id), with task_id as hash-collision tiebreak; first pilot -> e0, next total-pilot -> e1, remainder -> heldout. Heldout prompts are saved but not generated in E0/E1."
+}
