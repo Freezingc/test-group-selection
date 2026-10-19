@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "recorded_utc": "2026-10-19T13:15:40.942199+00:00",
+  "repository": "https://github.com/Freezingc/test-group-selection",
+  "private": true,
+  "branch": "research/e0-e1",
+  "released_source_commit": "6375df694be1f1d58da3bdd7eadad28eff86d2b6",
+  "tag": "e0-e1-v1",
+  "tag_commit_verified": true,
+  "url": "https://github.com/Freezingc/test-group-selection/releases/tag/e0-e1-v1",
+  "release_id": 417310900,
+  "prerelease": true,
+  "assets": [
+    {
+      "name": "e0-e1-v1-raw.manifest.json",
+      "id": 656325227,
+      "bytes": 3366,
+      "sha256": "f31aefb6a2700f82a5313436d9026c4c07d51ff00e721e36c0164e594a288d28",
+      "url": "https://github.com/Freezingc/test-group-selection/releases/download/e0-e1-v1/e0-e1-v1-raw.manifest.json"
+    },
+    {
+      "name": "e0-e1-v1-raw.tar.gz",
+      "id": 656325221,
+      "bytes": 10470624,
+      "sha256": "0157011667eaea33a7f58f34385bdb153470783307e19a97d28bc6b7eeb5a7f2",
+      "url": "https://github.com/Freezingc/test-group-selection/releases/download/e0-e1-v1/e0-e1-v1-raw.tar.gz"
+    }
+  ],
+  "verification_scope": "Remote branch and release tag matched the exact published source commit. GitHub-provided asset SHA-256 digests and byte sizes match local files; the archive was locally decompressed and every member hash verified. No independent full experiment rerun or remote asset download is claimed."
+}
