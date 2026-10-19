@@ -1,0 +1,29 @@
+{
+  "command": [
+    ".local/generation-venv/bin/python",
+    "-m",
+    "tgselect.generation",
+    "--views",
+    ".local/dataset/public/views.jsonl",
+    "--config",
+    "configs/e0-e1-v1.json",
+    "--split",
+    "e1",
+    "--model-path",
+    "/mnt/drug_db/zhangyudong/cache/huggingface/hub/models--Qwen--Qwen2.5-Coder-7B-Instruct/snapshots/c03e6d358207e414f1eca0bb1891e29f1db0e242",
+    "--output",
+    "artifacts/runs/e1-v1/raw/generation.jsonl"
+  ],
+  "cwd": "/home/zhangyudong/FDU/paper/Eval",
+  "start_utc": "2026-10-19T12:15:38.413154+00:00",
+  "status": "completed",
+  "timeout_seconds": 3600,
+  "log": ".local/e1-generation.log",
+  "peak_process_tree_rss_bytes": 1688883200,
+  "gpu_index": 2,
+  "peak_gpu_used_mib": 62099,
+  "pid": 3924443,
+  "elapsed_seconds": 1335.5845703720115,
+  "exit_code": 0,
+  "end_utc": "2026-10-19T12:37:53.997705+00:00"
+}

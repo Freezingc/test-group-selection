@@ -1,0 +1,90 @@
+{
+  "status": "verified",
+  "archive_name": "e0-e1-v1-raw.tar.gz",
+  "bytes": 10470624,
+  "sha256": "0157011667eaea33a7f58f34385bdb153470783307e19a97d28bc6b7eeb5a7f2",
+  "compression": "deterministic gzip + PAX tar; timestamps/owners normalized",
+  "files": [
+    {
+      "path": "artifacts/runs/e0-v1/raw/generation.jsonl",
+      "bytes": 1271727,
+      "sha256": "48532e4df9b8deec112418a8afa3a3b1e450d14ca12b3daa7a7a7a5995583167"
+    },
+    {
+      "path": "artifacts/runs/e0-v1/raw/tasks.jsonl",
+      "bytes": 2907947,
+      "sha256": "bad83068bef7698dedd53bd23debf422cf90b1111d7bd850012bdf43bde62fa3"
+    },
+    {
+      "path": "artifacts/runs/e0-v1/raw/tasks.manifest.json",
+      "bytes": 1057,
+      "sha256": "86313a5ff79c19161c22ef4f33f3d9533991152951ad067705a3ce553bfb1fd7"
+    },
+    {
+      "path": "artifacts/runs/e0-v1/raw/selections.jsonl",
+      "bytes": 52500381,
+      "sha256": "0ca87919a6fc967df80fb84d869f1fd32b66588007eacc4515213039f9dd3cb6"
+    },
+    {
+      "path": "artifacts/runs/e0-v1/raw/selections.manifest.json",
+      "bytes": 664,
+      "sha256": "cc0d8c645a9dbc76ded40173fae079d3686e65c8ecbeef19409fbcb813b5e2aa"
+    },
+    {
+      "path": "artifacts/runs/e0-v1/evaluation/labels.json",
+      "bytes": 10643,
+      "sha256": "56ddb82a9bf9e170da74ba7ab4e12b3523a2b611f7c03296f6a2018132749c12"
+    },
+    {
+      "path": "artifacts/runs/e0-v1/evaluation/receipt.json",
+      "bytes": 1521,
+      "sha256": "5c89f68fe16d798c775e385cbd511ba233ca7636e7a00d4b943a4daecbd0c551"
+    },
+    {
+      "path": "artifacts/runs/e0-v1/evaluation/samples_eval_results.json",
+      "bytes": 497575,
+      "sha256": "08cd6e6302c14b27dd14e634b3e1d230da8e5b0a7d01cfaeedf13ae46cfb72cb"
+    },
+    {
+      "path": "artifacts/runs/e1-v1/raw/generation.jsonl",
+      "bytes": 8938912,
+      "sha256": "c65ea0e94e33e942cca0d40c6fd0cfc4cfc901ed03be5dc6550067e219f9945a"
+    },
+    {
+      "path": "artifacts/runs/e1-v1/raw/tasks.jsonl",
+      "bytes": 20488665,
+      "sha256": "52a9fb78cd4e2d726df57e17dc83b554747f6c50dc0f78a8f94f9af4b5bbacd1"
+    },
+    {
+      "path": "artifacts/runs/e1-v1/raw/tasks.manifest.json",
+      "bytes": 2959,
+      "sha256": "2964868e53ff23cc0e2cf114731ebd4aa1917bc1bc3dd645dd2d4f216089f87f"
+    },
+    {
+      "path": "artifacts/runs/e1-v1/raw/selections.jsonl",
+      "bytes": 361497700,
+      "sha256": "e99830b400bfcb107363dee856da100a3f693ad1bc2f9d877a307efd17994287"
+    },
+    {
+      "path": "artifacts/runs/e1-v1/raw/selections.manifest.json",
+      "bytes": 2565,
+      "sha256": "18160156cbad9ce85b8f5a35ca8788d1894c99b128e22024dadacd3ee26c8592"
+    },
+    {
+      "path": "artifacts/runs/e1-v1/evaluation/labels.json",
+      "bytes": 74160,
+      "sha256": "348622322ac0b27d56c84e06bd5fd3e7613a2ac7db1a30c1ee189b24febba1eb"
+    },
+    {
+      "path": "artifacts/runs/e1-v1/evaluation/receipt.json",
+      "bytes": 3422,
+      "sha256": "49c6a60d8e59c2081bfdbc3378e88981a11501de52cecc278a05e9057f59c55f"
+    },
+    {
+      "path": "artifacts/runs/e1-v1/evaluation/samples_eval_results.json",
+      "bytes": 3430600,
+      "sha256": "05bf67973c1fd6d6e8c09b6a57f327a2573ef02c70f362604dba6b3b2097cd57"
+    }
+  ],
+  "scope": "Frozen model generations, generated-test execution matrices, selections and official outcome receipts. No official hidden inputs, reference source, private dataset snapshot or credentials."
+}

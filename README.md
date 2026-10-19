@@ -8,7 +8,10 @@ The experiment assessment is in [docs/experiment-results.md](docs/experiment-res
 
 ```bash
 .local/eval-venv/bin/python scripts/check_compact_results.py --run-dir artifacts/runs/e0-v1
+.local/eval-venv/bin/python scripts/check_compact_results.py --run-dir artifacts/runs/e1-v1
 ```
+
+E1 completed all 140 tasks with 2,240 generated candidates. The pool covers 121 tasks. Under ACES-C, source-group perturbation covers 112, Top-2 covers 111, behavior diversity covers 116, and random grouping averages 112.5. All five selectors and task-paired exploratory intervals are in [the complete E1 results](artifacts/runs/e1-v1/results.md). These observations establish remaining selection errors, but do not establish extra value from actual source groups. E2 was not run; the 218-task reserve and HumanEval+ remain unused.
 
 ## Protocol
 
@@ -80,6 +83,8 @@ After a reliable E0, repeat with `--split e1` and a new run directory. Keep E0 o
 ## Saved evidence and limits
 
 Version control contains source, protocol, unit tests, environment metadata and compact result artifacts. Raw generations, execution records and hidden outcome files use a separate compressed evidence archive. The archive excludes the official benchmark snapshot, reference implementations, hidden test inputs and credentials. Restore it only from the recorded release asset after verifying the archive SHA-256 against the committed manifest. A clone plus that archive supports replay of selection and reanalysis; independently rerunning hidden evaluation still requires preparing the pinned official dataset.
+
+Download `e0-e1-v1-raw.tar.gz` from the private [e0-e1-v1 prerelease](https://github.com/Freezingc/test-group-selection/releases/tag/e0-e1-v1). Its [committed manifest](artifacts/archives/e0-e1-v1-raw.manifest.json) records all 16 members and the archive SHA-256 `0157011667eaea33a7f58f34385bdb153470783307e19a97d28bc6b7eeb5a7f2` (10,470,624 bytes).
 
 Use a separate checkout to restore the archive, because its paths reproduce the frozen run directories. Compare each extracted file's SHA-256 against the member list in the archive manifest. The original `generation.jsonl`, `tasks.jsonl` and `selections.jsonl` must remain unchanged. To replay selection, choose a new output such as `.local/replayed-selections.jsonl` and compare its SHA-256 to the run's `selection-replay.json`. The compact checker verifies saved numerical results and does not itself regenerate model samples or execute the official benchmark.
 

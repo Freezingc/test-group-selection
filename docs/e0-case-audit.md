@@ -31,7 +31,7 @@
 
 ## 檔案、來源與核對方式
 
-原始證據位於 [E0 tasks.jsonl](/home/zhangyudong/FDU/paper/Eval/artifacts/runs/e0-v1/raw/tasks.jsonl)、[selections.jsonl](/home/zhangyudong/FDU/paper/Eval/artifacts/runs/e0-v1/raw/selections.jsonl)、[generation.jsonl](/home/zhangyudong/FDU/paper/Eval/artifacts/runs/e0-v1/raw/generation.jsonl)、[labels.json](/home/zhangyudong/FDU/paper/Eval/artifacts/runs/e0-v1/evaluation/labels.json) 與 [samples_eval_results.json](/home/zhangyudong/FDU/paper/Eval/artifacts/runs/e0-v1/evaluation/samples_eval_results.json)。官方標籤定義為 EvalPlus 0.3.1 的 base、plus 兩者皆 pass；`fast_check` 在首個失敗停止，因此失敗紀錄的 details 長度不是該 suite 的總測試數。
+原始證據需從 [e0-e1-v1 發布附件](https://github.com/Freezingc/test-group-selection/releases/tag/e0-e1-v1) 還原後讀取：`artifacts/runs/e0-v1/raw/` 中的 tasks.jsonl、selections.jsonl、generation.jsonl，以及 `artifacts/runs/e0-v1/evaluation/` 中的 labels.json、samples_eval_results.json。官方標籤定義為 EvalPlus 0.3.1 的 base、plus 兩者皆 pass；`fast_check` 在首個失敗停止，因此失敗紀錄的 details 長度不是該 suite 的總測試數。
 
 核對步驟：
 

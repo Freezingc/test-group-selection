@@ -1,0 +1,191 @@
+{
+  "compact_files": {
+    "evaluation.receipt.json": {
+      "bytes": 3422,
+      "sha256": "49c6a60d8e59c2081bfdbc3378e88981a11501de52cecc278a05e9057f59c55f"
+    },
+    "selections.manifest.json": {
+      "bytes": 2565,
+      "sha256": "18160156cbad9ce85b8f5a35ca8788d1894c99b128e22024dadacd3ee26c8592"
+    },
+    "task_metrics.jsonl": {
+      "bytes": 1896348,
+      "sha256": "7f6290625924a0549754644a749eb8a08ea46958426ffcc91b580bfb8fe93c38"
+    },
+    "tasks.manifest.json": {
+      "bytes": 2959,
+      "sha256": "2964868e53ff23cc0e2cf114731ebd4aa1917bc1bc3dd645dd2d4f216089f87f"
+    }
+  },
+  "cost": {
+    "gpu_monetary_cost_usd": null,
+    "paid_api_cost_usd": 0,
+    "scope": "Local inference; GPU hardware, electricity, allocation and monetary costs were not estimated and are not claimed to be zero"
+  },
+  "evidence_type": "natural_local_generation",
+  "generation": {
+    "backend_variants": [
+      {
+        "metadata": {
+          "attention_implementation": "sdpa",
+          "backend_version": "hf-autoregressive-v1",
+          "batch_size": 24,
+          "device": "cuda:0",
+          "dtype": "bfloat16",
+          "independent_per_request_rng": true,
+          "max_model_len": 8192,
+          "max_tokens": 2048,
+          "model_path": "/mnt/drug_db/zhangyudong/cache/huggingface/hub/models--Qwen--Qwen2.5-Coder-7B-Instruct/snapshots/c03e6d358207e414f1eca0bb1891e29f1db0e242",
+          "output_tokens_include_eos": true,
+          "position_ids": "attention_mask.cumsum(-1)-1; current token position for cached decode",
+          "temperature": 0.7,
+          "top_p": 0.95,
+          "top_p_boundary_tie_break": "descending logit then ascending token id",
+          "torch_version": "2.10.0+cu126",
+          "transformers_version": "5.13.0",
+          "vllm_output_equivalence": false
+        },
+        "requests": 3360,
+        "sha256": "7e52023f849cff2b1f69ff9b367d62a4057684245a262b6acbcd044d0e6850ab"
+      }
+    ],
+    "candidate": {
+      "finish_reasons": {
+        "stop": 2240
+      },
+      "input_tokens": 334656,
+      "output_tokens": 220880,
+      "requests": 2240
+    },
+    "tests": {
+      "finish_reasons": {
+        "length": 4,
+        "stop": 1116
+      },
+      "input_tokens": 234416,
+      "output_tokens": 230511,
+      "requests": 1120
+    },
+    "token_accounting": "Exact sum of recorded per-request tokenizer counts; EOS convention retained in backend metadata",
+    "total": {
+      "finish_reasons": {
+        "length": 4,
+        "stop": 3356
+      },
+      "input_tokens": 569072,
+      "output_tokens": 451391,
+      "requests": 3360
+    }
+  },
+  "hash_chain": "validated; summary metrics independently recomputed from frozen task/selection/label inputs",
+  "model_id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "model_revision": "c03e6d358207e414f1eca0bb1891e29f1db0e242",
+  "n_tasks": 140,
+  "privacy": "Contains aggregate usage, candidate/source/row hashes, candidate correctness labels and selected IDs; no candidate source, model response, reference or hidden input content",
+  "processes": {
+    "actual_gpu_compute_seconds": null,
+    "gpu_associated_stage_elapsed_seconds": 1335.5845703720115,
+    "gpu_memory_scope": "nvidia-smi whole-device memory.used; may include other processes; zero samples do not prove zero usage",
+    "max_phase_peak_process_tree_rss_bytes": 17495638016,
+    "peak_observed_device_memory_used_mib": 62099,
+    "phases": [
+      {
+        "elapsed_seconds": 7.100432817824185,
+        "end_utc": "2026-10-19T13:05:58.213525+00:00",
+        "exit_code": 0,
+        "gpu_index": null,
+        "gpu_monitor_degraded": false,
+        "peak_gpu_used_mib": 0,
+        "peak_process_tree_rss_bytes": 12713984,
+        "receipt": "analysis.process.json",
+        "start_utc": "2026-10-19T13:05:51.113108+00:00",
+        "status": "completed"
+      },
+      {
+        "elapsed_seconds": 182.21087078703567,
+        "end_utc": "2026-10-19T13:05:51.069472+00:00",
+        "exit_code": 0,
+        "gpu_index": null,
+        "gpu_monitor_degraded": false,
+        "peak_gpu_used_mib": 0,
+        "peak_process_tree_rss_bytes": 17495638016,
+        "receipt": "evaluation.process.json",
+        "start_utc": "2026-10-19T13:02:48.858616+00:00",
+        "status": "completed"
+      },
+      {
+        "elapsed_seconds": 1335.5845703720115,
+        "end_utc": "2026-10-19T12:37:53.997705+00:00",
+        "exit_code": 0,
+        "gpu_index": 2,
+        "gpu_monitor_degraded": false,
+        "peak_gpu_used_mib": 62099,
+        "peak_process_tree_rss_bytes": 1688883200,
+        "receipt": "generation.process.json",
+        "start_utc": "2026-10-19T12:15:38.413154+00:00",
+        "status": "completed"
+      },
+      {
+        "elapsed_seconds": 1426.0227005039342,
+        "end_utc": "2026-10-19T13:01:43.555373+00:00",
+        "exit_code": 0,
+        "gpu_index": null,
+        "gpu_monitor_degraded": false,
+        "peak_gpu_used_mib": 0,
+        "peak_process_tree_rss_bytes": 699129856,
+        "receipt": "matrix.process.json",
+        "start_utc": "2026-10-19T12:37:57.532688+00:00",
+        "status": "completed"
+      },
+      {
+        "elapsed_seconds": 64.60268999217078,
+        "end_utc": "2026-10-19T13:07:02.859693+00:00",
+        "exit_code": 0,
+        "gpu_index": null,
+        "gpu_monitor_degraded": false,
+        "peak_gpu_used_mib": 0,
+        "peak_process_tree_rss_bytes": 141729792,
+        "receipt": "selection-replay.process.json",
+        "start_utc": "2026-10-19T13:05:58.257018+00:00",
+        "status": "completed"
+      },
+      {
+        "elapsed_seconds": 65.21583153493702,
+        "end_utc": "2026-10-19T13:02:48.815156+00:00",
+        "exit_code": 0,
+        "gpu_index": null,
+        "gpu_monitor_degraded": false,
+        "peak_gpu_used_mib": 0,
+        "peak_process_tree_rss_bytes": 141623296,
+        "receipt": "selection.process.json",
+        "start_utc": "2026-10-19T13:01:43.599341+00:00",
+        "status": "completed"
+      }
+    ],
+    "sum_phase_elapsed_seconds": 3080.7370960079134,
+    "timing_scope": "Stage elapsed times may overlap; their sum is not a claim about total wall time or active GPU compute",
+    "wall_span_seconds": 3084.446539
+  },
+  "schema_version": "tgselect-usage-v1",
+  "source_hashes": {
+    "/home/zhangyudong/FDU/paper/Eval/configs/e0-e1-v1.json": "ff38b4d4676c37cf4066e425c7f276aa3d2bc4e219f6cfb3ccedd1c8f141f9b7",
+    "analysis.process.json": "5bf632abfdd684e1011a0be4e4c3c6c3f8866de489eba4c7ba699afc7744b401",
+    "evaluation.process.json": "824f1520c1208f7e6c94b054b1570b4b2c5d144da11d6ff4c88e4dc6281e0f52",
+    "evaluation/labels.json": "348622322ac0b27d56c84e06bd5fd3e7613a2ac7db1a30c1ee189b24febba1eb",
+    "evaluation/receipt.json": "49c6a60d8e59c2081bfdbc3378e88981a11501de52cecc278a05e9057f59c55f",
+    "evaluation/samples_eval_results.json": "05bf67973c1fd6d6e8c09b6a57f327a2573ef02c70f362604dba6b3b2097cd57",
+    "generation.process.json": "6354cba22003ce6eaa11cca8581921f3fd0c4075a96f22de4ad5d0d8b250c7e4",
+    "inputs.manifest.json": "8db7e55438e4795242b4f337f353f672edb1f3af48d68ebba42f904848993e50",
+    "matrix.process.json": "148f77909152e34cbc52f46b308a4f0d3f82ccddaa761e0661e358a13dcb756a",
+    "raw/generation.jsonl": "c65ea0e94e33e942cca0d40c6fd0cfc4cfc901ed03be5dc6550067e219f9945a",
+    "raw/selections.jsonl": "e99830b400bfcb107363dee856da100a3f693ad1bc2f9d877a307efd17994287",
+    "raw/selections.manifest.json": "18160156cbad9ce85b8f5a35ca8788d1894c99b128e22024dadacd3ee26c8592",
+    "raw/tasks.jsonl": "52a9fb78cd4e2d726df57e17dc83b554747f6c50dc0f78a8f94f9af4b5bbacd1",
+    "raw/tasks.manifest.json": "2964868e53ff23cc0e2cf114731ebd4aa1917bc1bc3dd645dd2d4f216089f87f",
+    "selection-replay.process.json": "55bac587ef37d7e3412a6d42717e84af4fa4c01583daccd47fa194c4f3b33367",
+    "selection.process.json": "835c207e2e4ca27e8329e6d7db650ce1ed1a512a465f25484151b2109d9219a2",
+    "summary.json": "cf79ed11c111fc77ea02c4a84ed4a95f2f4eb7cded20e2f49d69e3baad8f6329"
+  },
+  "split": "e1",
+  "status": "completed"
+}
