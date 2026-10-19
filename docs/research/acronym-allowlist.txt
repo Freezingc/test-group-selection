@@ -1,0 +1,13 @@
+# Named published methods, benchmarks and venues retain their official names.
+# Hardware units and product names do not need expansions in this research handoff.
+ACES
+BACE
+SPLIT
+MBPP
+CCF
+EMNLP
+AAAI
+GT
+GB
+RTX
+CPU

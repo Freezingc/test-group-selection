@@ -1,0 +1,134 @@
+{
+  "manifest_version": "1.0",
+  "manifest_id": "M-2026-10-19T10:58:45Z-6ec7",
+  "emitted_by": "report_compiler_agent",
+  "emitted_at": "2026-10-19T10:58:45Z",
+  "claims": [
+    {
+      "claim_id": "C-001",
+      "claim_text": "生成测试辅助代码选择、测试可靠性估计和成对查询已有研究，不能宣称这些组件本身首次提出。",
+      "intended_evidence_kind": "empirical",
+      "planned_refs": [
+        "chen2023codet",
+        "sun2026aces",
+        "li2025sstar",
+        "yuviler2026expairt"
+      ]
+    },
+    {
+      "claim_id": "C-002",
+      "claim_text": "ACES 在条件独立模型下构建留一 AUC；整组留出不能未经证明继承原理论。",
+      "intended_evidence_kind": "theoretical",
+      "planned_refs": [
+        "sun2026aces"
+      ]
+    },
+    {
+      "claim_id": "C-003",
+      "claim_text": "BACE 已使用执行列去重并联合演化程序和测试；固定池组件比较不能代表完整方法比较。",
+      "intended_evidence_kind": "empirical",
+      "planned_refs": [
+        "silva2026bace"
+      ]
+    },
+    {
+      "claim_id": "C-004",
+      "claim_text": "Verification Trap 使用控制性错误前提及监督风险预测、审核缓解；它不建立本项目自然错误频率。",
+      "intended_evidence_kind": "empirical",
+      "planned_refs": [
+        "he2026trap"
+      ]
+    },
+    {
+      "claim_id": "C-005",
+      "claim_text": "SPLIT 已研究带标签 pilot 校准下的生成与验证预算分配。",
+      "intended_evidence_kind": "empirical",
+      "planned_refs": [
+        "iyengar2026split"
+      ]
+    },
+    {
+      "claim_id": "C-006",
+      "claim_text": "弱监督来源依赖建模与测试多样性训练已有相关工作。",
+      "intended_evidence_kind": "empirical",
+      "planned_refs": [
+        "bach2017structure",
+        "nunez2026cover"
+      ]
+    },
+    {
+      "claim_id": "C-007",
+      "claim_text": "固定候选池内，非负加权的全部有效确定性测试不可能使全正确程序被严格超越；相同执行行不能被删列信息区分。",
+      "intended_evidence_kind": "theoretical",
+      "planned_refs": []
+    },
+    {
+      "claim_id": "C-008",
+      "claim_text": "包含原赢家的候选集合覆盖率减原准确率等于完美集合内审核的救援上限；集合间覆盖差不是实际审核收益差的普遍上限。",
+      "intended_evidence_kind": "theoretical",
+      "planned_refs": []
+    },
+    {
+      "claim_id": "C-009",
+      "claim_text": "本报告提出但不声称验证：生成批次扰动可改善等大小替代候选集合及同预算净纠错。",
+      "intended_evidence_kind": "definitional",
+      "planned_refs": []
+    },
+    {
+      "claim_id": "C-010",
+      "claim_text": "最小算法固定 k=2、选择器、删组重算、胜出次数、平局、补齐、单次审核与回退规则。",
+      "intended_evidence_kind": "normative",
+      "planned_refs": []
+    },
+    {
+      "claim_id": "C-011",
+      "claim_text": "实验按题目配对分析，区分开发和确认集、自然和注入场景、净纠错和额外成本；小样本不显著不能视为无效。",
+      "intended_evidence_kind": "normative",
+      "planned_refs": []
+    },
+    {
+      "claim_id": "C-012",
+      "claim_text": "模型、评测器及基准可从官方入口获取，但公开资源不保证具备本研究所需的测试来源日志。",
+      "intended_evidence_kind": "empirical",
+      "planned_refs": [
+        "liu2023evalplus",
+        "jain2024livecodebench",
+        "qwen2024model"
+      ]
+    },
+    {
+      "claim_id": "C-013",
+      "claim_text": "按用户给定人力、周期和设备规划短期探索与条件式后续研究，不承诺录用、单价或吞吐。",
+      "intended_evidence_kind": "normative",
+      "planned_refs": []
+    },
+    {
+      "claim_id": "C-014",
+      "claim_text": "成果为初步研究简报及实验交接附录；未运行研究实验、未完成预注册、未证实创新或效果。",
+      "intended_evidence_kind": "definitional",
+      "planned_refs": []
+    }
+  ],
+  "manifest_negative_constraints": [
+    {
+      "constraint_id": "MNC-1",
+      "rule": "不得编造研究结果、复现记录、文献或作者审阅声明。"
+    },
+    {
+      "constraint_id": "MNC-2",
+      "rule": "不得把生成批次视为已知错误家族、把稳定性视为正确性或把单独模型调用视为统计独立。"
+    },
+    {
+      "constraint_id": "MNC-3",
+      "rule": "不得让隐藏评测标签进入实际候选构造和审核。"
+    },
+    {
+      "constraint_id": "MNC-4",
+      "rule": "不得承诺CCF-A录用或声称穷尽检索证明首次创新。"
+    },
+    {
+      "constraint_id": "MNC-5",
+      "rule": "不得把本报告当已完成的ARS全流程论文、正式预注册或用户已批准付费实验。"
+    }
+  ]
+}

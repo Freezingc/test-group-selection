@@ -1,0 +1,14 @@
+.venv/
+.local/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+artifacts/raw/
+artifacts/private/
+artifacts/models/
+artifacts/runs/*/raw/
+artifacts/runs/*/evaluation/
+.env
+.env.*
+/2026-10-19-code-selection-research/

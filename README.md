@@ -1,0 +1,75 @@
+# Test-group perturbations for code candidate selection
+
+An exploratory implementation of **Selecting Candidates for Verification through Test-Group Perturbations**. It tests whether source-batch deletion exposes better alternatives than ordinary Top-2 and simple diversity controls, while freezing the candidate pool, test pool and review-set size.
+
+The starting research report is in [docs/research/research-report.md](docs/research/research-report.md). It contains hypotheses, not established results. The authorized first implementation covers E0–E1; no paid API auditor or E2 benefit is assumed.
+
+## Protocol
+
+- Official EvalPlus 0.3.1 / MBPP+ v0.2.0, pinned content hash.
+- Hash-selected 160-task development pool: 20 E0 engineering tasks, 140 E1 exploratory tasks. Remaining 218 tasks and HumanEval+ are reserved.
+- Qwen2.5-Coder-7B-Instruct revision `c03e6d358207e414f1eca0bb1891e29f1db0e242`; 16 program samples and 8 independently seeded requests for up to 8 tests each per task.
+- Five base selectors: uniform, ACES-C, execution-column deduplication, equal group weight and one representative per group.
+- Compare source-distinct Top-2, behavioral diversity, source-group perturbation and 20 size-matched random grouping seeds. Random grouping changes deletions only; it preserves each base selector and its original winner.
+- Exact ACES-C integer-equivalent weights; common deterministic candidate hash ties. Constant columns, zero-weight fallback and protocol differences are documented.
+- Public task views contain no reference code, contracts, hidden inputs or labels. Selections freeze before official hidden evaluation. Empty pools remain in the task denominator.
+- Generated-test syntax: one literal equality assertion against the task entry point. Invalid format and truncated generations remain logged. Expected outputs are never gold-filtered.
+- Every generated-test execution gets its own bubblewrap filesystem, network and PID namespaces, a fresh Python process, a 0.5 s program timeout, 1 GiB address-space limit and process/file limits.
+
+## Environment
+
+Linux with unprivileged user namespaces and `bubblewrap` is required for execution. Model generation needs one available GPU; the initial experiment uses an A800. Installation is isolated in `.venv`:
+
+```bash
+uv venv --python 3.11 .venv
+uv pip install --python .venv/bin/python -e '.[dev,generation]'
+.venv/bin/python -m pytest -q
+.venv/bin/python scripts/prepare_dataset.py
+HF_HUB_DISABLE_XET=1 .venv/bin/python scripts/download_model.py
+```
+
+The environment lock and resource receipts are saved alongside completed experiments. If a host cannot create namespaces, execution fails as infrastructure failure; it does not silently run unsandboxed.
+
+## Run E0
+
+Read the downloaded model path from `.local/model-path.txt` and supply it below. Choose a free GPU in `CUDA_VISIBLE_DEVICES`; this example uses GPU 2. Generation has an explicit hard timeout. Do not launch it on a GPU used by someone else.
+
+```bash
+mkdir -p artifacts/runs/e0-v1/raw
+CUDA_VISIBLE_DEVICES=2 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 \
+  timeout --kill-after=30s 3600 .venv/bin/python -m tgselect.generation \
+  --views .local/dataset/public/views.jsonl --config configs/e0-e1-v1.json \
+  --split e0 --model-path /absolute/path/from/model-path.txt \
+  --output artifacts/runs/e0-v1/raw/generation.jsonl
+.venv/bin/python -m tgselect.experiment matrix \
+  --views .local/dataset/public/views.jsonl --generation artifacts/runs/e0-v1/raw/generation.jsonl \
+  --config configs/e0-e1-v1.json --split e0 --output artifacts/runs/e0-v1/raw/tasks.jsonl
+.venv/bin/python -m tgselect.experiment select \
+  --tasks artifacts/runs/e0-v1/raw/tasks.jsonl --config configs/e0-e1-v1.json \
+  --output artifacts/runs/e0-v1/raw/selections.jsonl
+.venv/bin/python -m tgselect.experiment evaluate \
+  --tasks artifacts/runs/e0-v1/raw/tasks.jsonl --snapshot .local/dataset/private/mbppplus.jsonl \
+  --output-dir artifacts/runs/e0-v1/evaluation
+.venv/bin/python -m tgselect.experiment analyse \
+  --tasks artifacts/runs/e0-v1/raw/tasks.jsonl --selections artifacts/runs/e0-v1/raw/selections.jsonl \
+  --labels artifacts/runs/e0-v1/evaluation/labels.json --config configs/e0-e1-v1.json \
+  --output-dir artifacts/runs/e0-v1
+```
+
+Replay `select` to a new output and compare SHA-256 hashes; generated programs do not need to run again for a selection replay. Resume generation is explicit and validates full request identity. Crashed runs retain receipts and require diagnosis before continuation.
+
+After a reliable E0, repeat with `--split e1` and a new run directory. Keep E0 out of the E1 inference denominator. Every comparison uses whole tasks as the sampling unit, with task-paired intervals; the 20 random seeds are averaged within each task before bootstrap.
+
+## Saved evidence and limits
+
+Version control contains source, protocol, unit tests, environment metadata and compact result artifacts. Large raw generations, execution records and hidden evaluation files remain local under ignored directories, with SHA-256 manifests. A GitHub clone alone does not include these raw records; regenerate them with the pinned protocol or obtain the recorded local archive.
+
+Oracle pair coverage measures available rescue space. It is not an observed real-reviewer accuracy improvement, and finite MBPP+ tests do not prove semantic correctness. Development observations cannot establish a small effect or general novelty. No human-read attestation or independent cross-model research review is claimed.
+
+## Method sources
+
+- [EvalPlus official repository](https://github.com/evalplus/evalplus)
+- [Qwen2.5-Coder-7B-Instruct model card](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)
+- [ACES v2, sections 2.1, 3.1 and Algorithm 1](https://arxiv.org/html/2604.03922v2)
+
+ACES-C implementation uses the paper's formula. Candidate tie-breaking and all-zero-weight fallback follow this project's protocol. CodeT was source-audited but is not implemented or claimed as reproduced.

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "test-group-selection"
+version = "0.1.0"
+description = "Reproducible experiments on candidate selection through test-group perturbations"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2", "evalplus==0.3.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+generation = ["vllm==0.11.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

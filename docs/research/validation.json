@@ -1,0 +1,44 @@
+{
+  "validated_at": "2026-10-19T11:11:33.802113+00:00",
+  "artifact": "/home/zhangyudong/FDU/paper/quant/notes/2026-10-19-code-selection-research/research-report.md",
+  "sha256": "60ef2ace60b6112418332a0e6284ea198e29cbc0875944b35a19d61c83c61f39",
+  "size_bytes": 44902,
+  "lines": 437,
+  "cjk_character_count": 10585,
+  "whitespace_word_count": 1758,
+  "checks": {
+    "citation_locator_lint": {
+      "exit_code": 0,
+      "stdout": "[v3.7.3 three-layer-citation lint] PASSED (1 file(s) scanned)\n",
+      "stderr": ""
+    },
+    "acronym_advisory": {
+      "exit_code": 0,
+      "stdout": "### Acronym check (advisory; no reply needed)\nCoverage: body (partial)\nNot in this input: English abstract, Chinese abstract.\nNo findings.\n",
+      "stderr": ""
+    },
+    "manifest_schema": {
+      "status": "PASS"
+    },
+    "reference_keys": {
+      "status": "PASS",
+      "cited_unique": 12,
+      "unplanned": [],
+      "planned_uncited": [],
+      "marker_count": 24,
+      "paired_nonempty_locator_count": 24
+    },
+    "markdown_structure": {
+      "balanced_fences": true,
+      "unresolved_placeholders": []
+    },
+    "planning_arithmetic": {
+      "program_samples": 2560,
+      "test_generation_requests": 1280,
+      "matrix_entries": 163840,
+      "logical_audits_three_methods": 480,
+      "approximate_power_example_tasks": 1960
+    }
+  },
+  "scope_note": "Citation syntax and locator presence, manifest schema/reference consistency, acronym advisory and planning arithmetic only. Does not establish factual truth, experimental effectiveness, novelty, pre-registration or full ARS pipeline completion. No research experiments run."
+}
