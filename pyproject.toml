@@ -12,6 +12,7 @@ dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2", "evalplus==0.3.1"]
 [project.optional-dependencies]
 dev = ["pytest>=8,<9"]
 generation = ["torch==2.10.0", "transformers==5.13.0", "accelerate==1.14.0"]
+plots = ["matplotlib==3.11.2"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -1,0 +1,6450 @@
+{
+  "ast_parse_error_candidate_ids": [],
+  "audit_script_sha256": "5fe2f4ee2416a8a30ed0bbe84254b2bc7b4071afef2fa50b7c14cd48c2a6ad17",
+  "bare_python_candidate_ids": [
+    "Mbpp/100/candidate/01",
+    "Mbpp/100/candidate/15",
+    "Mbpp/120/candidate/10",
+    "Mbpp/120/candidate/14",
+    "Mbpp/166/candidate/05",
+    "Mbpp/166/candidate/14",
+    "Mbpp/245/candidate/02",
+    "Mbpp/245/candidate/03",
+    "Mbpp/245/candidate/04",
+    "Mbpp/245/candidate/07",
+    "Mbpp/245/candidate/11",
+    "Mbpp/274/candidate/00",
+    "Mbpp/282/candidate/08",
+    "Mbpp/294/candidate/09",
+    "Mbpp/294/candidate/11",
+    "Mbpp/294/candidate/13",
+    "Mbpp/309/candidate/09",
+    "Mbpp/309/candidate/13",
+    "Mbpp/422/candidate/02",
+    "Mbpp/422/candidate/03",
+    "Mbpp/422/candidate/05",
+    "Mbpp/422/candidate/10",
+    "Mbpp/422/candidate/13",
+    "Mbpp/435/candidate/00",
+    "Mbpp/435/candidate/01",
+    "Mbpp/435/candidate/03",
+    "Mbpp/435/candidate/09",
+    "Mbpp/435/candidate/10",
+    "Mbpp/435/candidate/11",
+    "Mbpp/435/candidate/13",
+    "Mbpp/435/candidate/15",
+    "Mbpp/446/candidate/00",
+    "Mbpp/446/candidate/02",
+    "Mbpp/478/candidate/07",
+    "Mbpp/752/candidate/10",
+    "Mbpp/772/candidate/14"
+  ],
+  "candidate_wall_seconds": {
+    "aggregation_warning": "sum is accumulated candidate elapsed time; overlapping workers mean it is not actual stage wall time",
+    "max": 4.923052852973342,
+    "missing_count": 0,
+    "observed_count": 320,
+    "quantile_method": "linear interpolation at (n-1)*p",
+    "quantiles": {
+      "p0": 3.288485768251121,
+      "p100": 4.923052852973342,
+      "p25": 4.280512618017383,
+      "p50": 4.385689768008888,
+      "p75": 4.496595300966874,
+      "p90": 4.597890547057614,
+      "p95": 4.655727123492397,
+      "p99": 4.725937687335536
+    },
+    "sum": 1391.7263510944322,
+    "unit": "candidate executor elapsed seconds including sandbox startup and all test processes"
+  },
+  "candidates": [
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/446/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.315729098394513
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/446/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 50
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.418932817876339
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/446/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.236473353113979
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/446/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 50
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.385488973930478
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/446/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 50
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.339156001806259
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/446/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 50
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.515799561981112
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/446/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "collections",
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 50
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.475748083088547
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/446/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 50
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.344773823395371
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/446/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 50
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.221730560064316
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/446/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "collections"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 50
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.211101465858519
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/446/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "collections"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 50
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.211115991231054
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/446/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 50
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.345200134906918
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/446/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 50
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.3627106519415975
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/446/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 50
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.362501788884401
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/446/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 50
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.235239610075951
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/446/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 50
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64,
+      "wall_seconds": 4.305844255257398
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/274/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.219766010995954
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 6,
+        "pass": 58
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.231736280024052
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 4,
+        "pass": 58,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.234532468952239
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 6,
+        "pass": 58
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.458734706044197
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 4,
+        "pass": 58,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.382335867267102
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 6,
+        "pass": 58
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.416760608088225
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 4,
+        "pass": 58,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.453785229008645
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 4,
+        "pass": 58,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.271756278816611
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 6,
+        "pass": 58
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.270193478092551
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 6,
+        "pass": 58
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.269325138069689
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 4,
+        "pass": 58,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.34276360925287
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 6,
+        "pass": 58
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.340864305850118
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 4,
+        "pass": 58,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.220064080320299
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 6,
+        "pass": 58
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.2249082936905324
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 6,
+        "pass": 58
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.373159411828965
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/274/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 6,
+        "pass": 58
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64,
+      "wall_seconds": 4.229758643079549
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 19,
+        "pass": 45
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.266683472786099
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 19,
+        "pass": 45
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.363931242842227
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.514163168147206
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.406676998827606
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.577269770670682
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.438058695755899
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.343596428167075
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/478/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.493853165302426
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 19,
+        "pass": 45
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.202275125775486
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.226323340088129
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 19,
+        "pass": 45
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.142474878113717
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.2520660241134465
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 19,
+        "pass": 45
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.329703150782734
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.294811662752181
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 19,
+        "pass": 45
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.2191979768686
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/478/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 19,
+        "pass": 45
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64,
+      "wall_seconds": 4.289557251147926
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 8,
+        "pass": 56
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.258309509139508
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 8,
+        "pass": 56
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.344402123708278
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 8,
+        "pass": 56
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.5163027797825634
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 8,
+        "pass": 56
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.282337069045752
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 8,
+        "pass": 56
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.343953619711101
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 8,
+        "pass": 56
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.451047540642321
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "IndexError": 4
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 4,
+        "pass": 56,
+        "program_error": 4
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.5035921526141465
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 8,
+        "pass": 56
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.424574083182961
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/282/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.257973613217473
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 8,
+        "pass": 56
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.219096250832081
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 8,
+        "pass": 56
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.285011467989534
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 8,
+        "pass": 56
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.259761668741703
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 8,
+        "pass": 56
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.212777600158006
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 8,
+        "pass": 56
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.2542379992082715
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 8,
+        "pass": 56
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.384198577608913
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/282/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 8,
+        "pass": 56
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64,
+      "wall_seconds": 4.388314120005816
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/100/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 64
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.295244918670505
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/100/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.275107556954026
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/100/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.397020954173058
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/100/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.3149684318341315
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/100/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.539793415926397
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/100/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.290030467323959
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/100/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.493669905234128
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/100/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.527248101308942
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/100/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "collections",
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.546449669636786
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/100/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.352828892879188
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/100/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "collections",
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.5797099461779
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/100/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.504759002011269
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/100/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.306277400813997
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/100/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 40,
+        "pass": 24
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.222612481098622
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/100/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.312145701143891
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/100/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64,
+      "wall_seconds": 4.3426406919024885
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/422/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 7,
+        "ZeroDivisionError": 8
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 20,
+        "pass": 28,
+        "program_error": 15
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.240840740967542
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/422/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 7,
+        "ZeroDivisionError": 8
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 20,
+        "pass": 28,
+        "program_error": 15
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.221647476311773
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/422/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 63
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 63
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.258810590021312
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/422/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 63
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 63
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.4599995031021535
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/422/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 7,
+        "ZeroDivisionError": 8
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 20,
+        "pass": 28,
+        "program_error": 15
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.252083303872496
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/422/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 63
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 63
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.292551726102829
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/422/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 7,
+        "ZeroDivisionError": 8
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 20,
+        "pass": 28,
+        "program_error": 15
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.482607153709978
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/422/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 7,
+        "ZeroDivisionError": 8
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 20,
+        "pass": 28,
+        "program_error": 15
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.331038696225733
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/422/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 7,
+        "ZeroDivisionError": 8
+      },
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 20,
+        "pass": 28,
+        "program_error": 15
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.237454600166529
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/422/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 7,
+        "ZeroDivisionError": 8
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 20,
+        "pass": 28,
+        "program_error": 15
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.309780484996736
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/422/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 63
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 63
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.23724368121475
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/422/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 7,
+        "ZeroDivisionError": 8
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 20,
+        "pass": 28,
+        "program_error": 15
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.253148457966745
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/422/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 7,
+        "ZeroDivisionError": 8
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 20,
+        "pass": 28,
+        "program_error": 15
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.252191671635956
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/422/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 63
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 63
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.355832471977919
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/422/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 7,
+        "ZeroDivisionError": 8
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 20,
+        "pass": 28,
+        "program_error": 15
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.3188373926095665
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/422/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 7,
+        "ZeroDivisionError": 8
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 20,
+        "pass": 28,
+        "program_error": 15
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63,
+      "wall_seconds": 4.265549812931567
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/294/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 36
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.4561678022146225
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/294/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 29
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 4,
+        "pass": 31,
+        "program_error": 29
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.414546913933009
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/294/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 36
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.5666443151421845
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/294/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 29
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 4,
+        "pass": 31,
+        "program_error": 29
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.372631805948913
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/294/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "IndexError": 5,
+        "TypeError": 8
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 24,
+        "pass": 27,
+        "program_error": 13
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.35599606204778
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/294/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "IndexError": 5,
+        "TypeError": 11
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 48,
+        "program_error": 16
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.446771391667426
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/294/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 29
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 4,
+        "pass": 31,
+        "program_error": 29
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.380805556196719
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/294/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "IndexError": 5,
+        "TypeError": 8
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 24,
+        "pass": 27,
+        "program_error": 13
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.497508632950485
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/294/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 27,
+        "pass": 37
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.282787990756333
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/294/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.306318564340472
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/294/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 29
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 4,
+        "pass": 31,
+        "program_error": 29
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.304032488260418
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/294/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.430201291572303
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/294/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 29
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 4,
+        "pass": 31,
+        "program_error": 29
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.299031550064683
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/294/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.420426922850311
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/294/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 8
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 24,
+        "pass": 32,
+        "program_error": 8
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.285880157258362
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/294/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 29
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 4,
+        "pass": 31,
+        "program_error": 29
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64,
+      "wall_seconds": 4.282643870916218
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48,
+        "pass": 16
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.434139091987163
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48,
+        "pass": 16
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.556026143953204
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48,
+        "pass": 16
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.3198736580088735
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48,
+        "pass": 16
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.462667678948492
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48,
+        "pass": 16
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.285607324913144
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48,
+        "pass": 16
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.575340383220464
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48,
+        "pass": 16
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.347428092267364
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 64
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.605852202046663
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48,
+        "pass": 16
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.384539095219225
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48,
+        "pass": 16
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.280762663111091
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/752/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.295392440166324
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "RecursionError": 1
+      },
+      "import_top_modules": [
+        "functools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 45,
+        "pass": 18,
+        "program_error": 1
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.458224411122501
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48,
+        "pass": 16
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.298910091165453
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48,
+        "pass": 16
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.2318894802592695
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48,
+        "pass": 16
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.381021736189723
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/752/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48,
+        "pass": 16
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64,
+      "wall_seconds": 4.251390170305967
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/245/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.401707728393376
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/245/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "collections",
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.5400128732435405
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/245/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.584825485944748
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/245/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.41425301367417
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/245/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.414214781019837
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/245/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.377241933252662
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/245/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 33,
+        "pass": 31
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.5176572422496974
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/245/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.569281654898077
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/245/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 52,
+        "pass": 12
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.270804305095226
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/245/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.285835094284266
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/245/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.3003607941791415
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/245/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.278133337851614
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/245/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "collections",
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.727284883148968
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/245/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.474029195960611
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/245/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.409542025066912
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/245/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "collections",
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 32,
+        "pass": 32
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64,
+      "wall_seconds": 4.581382517237216
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 36,
+        "pass": 28
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.4488810282200575
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 1
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 13,
+        "pass": 50,
+        "program_error": 1
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.343865144066513
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 1
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 13,
+        "pass": 50,
+        "program_error": 1
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.368078287225217
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "collections",
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 11,
+        "pass": 53
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.479549086187035
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 11,
+        "pass": 53
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.490299934055656
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 11,
+        "pass": 53
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.363916100002825
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 1
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 13,
+        "pass": 50,
+        "program_error": 1
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.46183972992003
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 11,
+        "pass": 53
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.332844845019281
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 1
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 13,
+        "pass": 50,
+        "program_error": 1
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.275472032371908
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 30
+      },
+      "import_top_modules": [
+        "collections",
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 25,
+        "pass": 9,
+        "program_error": 30
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.402386515866965
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 1
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 13,
+        "pass": 50,
+        "program_error": 1
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.233530101366341
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 1
+      },
+      "import_top_modules": [
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 45,
+        "program_error": 1
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.456735094077885
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 11,
+        "pass": 53
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.33873486192897
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 1
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 13,
+        "pass": 50,
+        "program_error": 1
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.4084898116998374
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 1
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 13,
+        "pass": 50,
+        "program_error": 1
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.242149531841278
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/793/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 1
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 13,
+        "pass": 50,
+        "program_error": 1
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64,
+      "wall_seconds": 4.280989927239716
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/309/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 3
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 55,
+        "program_error": 3
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 4.10328094381839
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/309/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 3
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 55,
+        "program_error": 3
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 4.203282593283802
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/309/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 3
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 55,
+        "program_error": 3
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 4.02199674025178
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/309/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 3
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 55,
+        "program_error": 3
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 4.3018463756889105
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/309/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 3
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 55,
+        "program_error": 3
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 4.000046845059842
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/309/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 3
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 55,
+        "program_error": 3
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 4.003408381249756
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/309/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 3
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 55,
+        "program_error": 3
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 4.026561427861452
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/309/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 3
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 55,
+        "program_error": 3
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 4.278188833966851
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/309/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 3
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 55,
+        "program_error": 3
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 3.973387529142201
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/309/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 58
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 58
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 3.919899292755872
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/309/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 3
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 55,
+        "program_error": 3
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 3.9556689066812396
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/309/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 3
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 55,
+        "program_error": 3
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 3.975772417150438
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/309/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 3
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 55,
+        "program_error": 3
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 3.9489498799666762
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/309/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 58
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 58
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 3.9285517050884664
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/309/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 3
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 55,
+        "program_error": 3
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 3.9327269420027733
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/309/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "TypeError": 3
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 55,
+        "program_error": 3
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58,
+      "wall_seconds": 4.010047954041511
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/435/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.427229750901461
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/435/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.346873803064227
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/435/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.540222137235105
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/435/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.388093019835651
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/435/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.400760481134057
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/435/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.652917695231736
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/435/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.34377932921052
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/435/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.646672700997442
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/435/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.455875955987722
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/435/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.392473943065852
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/435/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.430866340640932
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/435/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.464277634397149
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/435/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.612540276255459
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/435/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.423730717040598
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/435/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.465801073238254
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/435/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64,
+      "wall_seconds": 4.545725106727332
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 37,
+        "pass": 27
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.618712155148387
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 37,
+        "pass": 27
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.509525323752314
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 37,
+        "pass": 27
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.495049878954887
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 37,
+        "pass": 27
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.440692987758666
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 37,
+        "pass": 27
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.473181875888258
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 37,
+        "pass": 27
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.525199522264302
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 37,
+        "pass": 27
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.508595627266914
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 37,
+        "pass": 27
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.685307933948934
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 37,
+        "pass": 27
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.4706816310063004
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 37,
+        "pass": 27
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.534631472080946
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 37,
+        "pass": 27
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.437446963042021
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 37,
+        "pass": 27
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.4001683332026005
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 36,
+        "pass": 28
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.621081409975886
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 37,
+        "pass": 27
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.5055801291018724
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/772/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.420518104918301
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/772/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 37,
+        "pass": 27
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64,
+      "wall_seconds": 4.496290856972337
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.4533464475534856
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.4443497210741043
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.3634420270100236
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.553026287816465
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.3774545271880925
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.2993894829414785
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.458574702963233
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.486729432363063
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.487794972024858
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.2913262816146016
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.288485768251121
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.299766497220844
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.3976829200983047
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.3398882639594376
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.3425873280502856
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/462/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "itertools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 48
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48,
+      "wall_seconds": 3.4007749129086733
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/166/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "collections",
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.720194378867745
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/166/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.422502908855677
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/166/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.4313874137587845
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/166/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.58642362896353
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/166/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.59912840789184
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/166/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.603676074650139
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/166/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.433997967746109
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/166/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "collections",
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.6703433226794
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/166/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.626169919967651
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/166/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.4011892401613295
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/166/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.6235077967867255
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/166/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.390609554946423
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/166/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.66621993528679
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/166/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.587658945005387
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/166/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "import_top_modules": [
+        "collections",
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 64
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.655967460945249
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/166/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "collections",
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 15,
+        "pass": 49
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64,
+      "wall_seconds": 4.596531248185784
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 30,
+        "pass": 34
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.478982475120574
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 30,
+        "pass": 34
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.55565886804834
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 30,
+        "pass": 34
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.551637894008309
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 30,
+        "pass": 34
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.483422630932182
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 30,
+        "pass": 34
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.74406300811097
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "functools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 30,
+        "pass": 34
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.516131567303091
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 30,
+        "pass": 34
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.515253432095051
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 30,
+        "pass": 34
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.663178347982466
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 30,
+        "pass": 34
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.383918994106352
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "RecursionError": 50
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "pass": 14,
+        "program_error": 50
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.41873467201367
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 30,
+        "pass": 34
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.341477479785681
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "functools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 30,
+        "pass": 34
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.532580008264631
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "functools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 64
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.363236658275127
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 30,
+        "pass": 34
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.34616449708119
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 30,
+        "pass": 34
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.679108866956085
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/392/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 30,
+        "pass": 34
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64,
+      "wall_seconds": 4.619104329030961
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 2,
+        "pass": 62
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.4450436951592565
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 2,
+        "pass": 62
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.551400771830231
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 64
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.48657153500244
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 11,
+        "pass": 53
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.495713256299496
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 2,
+        "pass": 62
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.679786375723779
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 2,
+        "pass": 62
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.519940618891269
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 64
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.582684860099107
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 64
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.73326382599771
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 2,
+        "pass": 62
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.483976487070322
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 2,
+        "pass": 62
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.507558268960565
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 2,
+        "pass": 62
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.474301008041948
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 11,
+        "pass": 53
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.449999980162829
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 64
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.558635707013309
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 2,
+        "pass": 62
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.411369394045323
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 2,
+        "pass": 62
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.597753006964922
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/737/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "re"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 2,
+        "pass": 62
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64,
+      "wall_seconds": 4.556293542962521
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/120/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "functools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 49
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.385890562087297
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/120/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 12,
+        "pass": 49,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.655714474152774
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/120/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 12,
+        "pass": 49,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.379058047197759
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/120/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 49
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.364795835223049
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/120/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 12,
+        "pass": 49,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.403519643004984
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/120/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 14,
+        "pass": 49
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.62275074608624
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/120/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 12,
+        "pass": 49,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.610660488717258
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/120/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [
+        "functools"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 12,
+        "pass": 49,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.363387471996248
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/120/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 12,
+        "pass": 49,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.415517634246498
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/120/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [
+        "functools",
+        "operator"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 12,
+        "pass": 49,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.471260033082217
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/120/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 63
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 63
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.435101975221187
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/120/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 12,
+        "pass": 49,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.380086284130812
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/120/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 12,
+        "pass": 49,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.572916549164802
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/120/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 12,
+        "pass": 49,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.459886931814253
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": true,
+      "candidate_id": "Mbpp/120/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "NameError": 63
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "program_error": 63
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.5314423479139805
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/120/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {
+        "ValueError": 2
+      },
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 12,
+        "pass": 49,
+        "program_error": 2
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63,
+      "wall_seconds": 4.400972688104957
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.320775546133518
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.258199771866202
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.2805348336696625
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.431900965049863
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.280445971060544
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.533506046980619
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.457745525054634
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.3505604630336165
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 25,
+        "pass": 36
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.535466610919684
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.270218631718308
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.515495930798352
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.2764455010183156
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.276828836183995
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.293216987978667
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.336382113397121
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/312/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "math"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 28,
+        "pass": 33
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61,
+      "wall_seconds": 4.291780236177146
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/00",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.630553489085287
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/01",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.472928978037089
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/02",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.539536005351692
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/03",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.627496015280485
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/04",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.923052852973342
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/05",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.665106598753482
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/06",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.663999578915536
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/07",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.457861566916108
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/08",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.588352469261736
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/09",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.374224065802991
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/10",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.411030659917742
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/11",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.372713438700885
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/12",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.708361174911261
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/13",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [
+        "typing"
+      ],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.6641915128566325
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/14",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.402684286702424
+    },
+    {
+      "ast_parse_error": null,
+      "bare_python_toplevel_expression": false,
+      "candidate_id": "Mbpp/751/candidate/15",
+      "dynamic_import_syntax": false,
+      "exceptions_counts": {},
+      "import_top_modules": [],
+      "nonstdlib_top_modules": [],
+      "relative_import_syntax": false,
+      "status_counts": {
+        "assertion_fail": 18,
+        "pass": 46
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64,
+      "wall_seconds": 4.3801606530323625
+    }
+  ],
+  "case_seconds": {
+    "max": 0.22303055599331856,
+    "missing_count": 0,
+    "observed_count": 20048,
+    "quantile_method": "linear interpolation at (n-1)*p",
+    "quantiles": {
+      "p0": 0.0010656802915036678,
+      "p100": 0.22303055599331856,
+      "p25": 0.0012270727893337607,
+      "p50": 0.0012798532843589783,
+      "p75": 0.0013564714463427663,
+      "p90": 0.0014814214315265416,
+      "p95": 0.004805069137364625,
+      "p99": 0.005370253417640923
+    },
+    "sum": 31.070483782794327,
+    "timeout_seconds_semantics": "timeout records contain the configured per-test budget, not measured completion time",
+    "unit": "seconds recorded in the program child; not sandbox or stage wall time"
+  },
+  "classification_python_version": "3.11.4",
+  "concerns": {
+    "ChildProcessExit": {
+      "candidate_ids": [],
+      "count": 0,
+      "task_ids": []
+    },
+    "ImportError": {
+      "candidate_ids": [],
+      "count": 0,
+      "task_ids": []
+    },
+    "MemoryError": {
+      "candidate_ids": [],
+      "count": 0,
+      "task_ids": []
+    },
+    "ModuleNotFoundError": {
+      "candidate_ids": [],
+      "count": 0,
+      "task_ids": []
+    },
+    "timeout": {
+      "candidate_ids": [],
+      "count": 0,
+      "task_ids": []
+    }
+  },
+  "counts": {
+    "ast_parse_errors": 0,
+    "candidates": 320,
+    "case_results": 20048,
+    "tasks": 20
+  },
+  "dynamic_import_candidate_ids": [],
+  "exceptions_counts": {
+    "IndexError": 19,
+    "NameError": 2285,
+    "RecursionError": 51,
+    "TypeError": 163,
+    "ValueError": 238,
+    "ZeroDivisionError": 88
+  },
+  "imports": {
+    "collections": {
+      "ast_occurrences": 14,
+      "candidate_count": 14,
+      "candidate_ids": [
+        "Mbpp/100/candidate/08",
+        "Mbpp/100/candidate/10",
+        "Mbpp/166/candidate/00",
+        "Mbpp/166/candidate/07",
+        "Mbpp/166/candidate/14",
+        "Mbpp/166/candidate/15",
+        "Mbpp/245/candidate/01",
+        "Mbpp/245/candidate/12",
+        "Mbpp/245/candidate/15",
+        "Mbpp/446/candidate/06",
+        "Mbpp/446/candidate/09",
+        "Mbpp/446/candidate/10",
+        "Mbpp/793/candidate/03",
+        "Mbpp/793/candidate/09"
+      ],
+      "is_stdlib": true,
+      "task_ids": [
+        "Mbpp/100",
+        "Mbpp/166",
+        "Mbpp/245",
+        "Mbpp/446",
+        "Mbpp/793"
+      ]
+    },
+    "functools": {
+      "ast_occurrences": 7,
+      "candidate_count": 7,
+      "candidate_ids": [
+        "Mbpp/120/candidate/00",
+        "Mbpp/120/candidate/07",
+        "Mbpp/120/candidate/09",
+        "Mbpp/392/candidate/05",
+        "Mbpp/392/candidate/11",
+        "Mbpp/392/candidate/12",
+        "Mbpp/752/candidate/11"
+      ],
+      "is_stdlib": true,
+      "task_ids": [
+        "Mbpp/120",
+        "Mbpp/392",
+        "Mbpp/752"
+      ]
+    },
+    "itertools": {
+      "ast_occurrences": 17,
+      "candidate_count": 17,
+      "candidate_ids": [
+        "Mbpp/100/candidate/11",
+        "Mbpp/462/candidate/00",
+        "Mbpp/462/candidate/01",
+        "Mbpp/462/candidate/02",
+        "Mbpp/462/candidate/03",
+        "Mbpp/462/candidate/04",
+        "Mbpp/462/candidate/05",
+        "Mbpp/462/candidate/06",
+        "Mbpp/462/candidate/07",
+        "Mbpp/462/candidate/08",
+        "Mbpp/462/candidate/09",
+        "Mbpp/462/candidate/10",
+        "Mbpp/462/candidate/11",
+        "Mbpp/462/candidate/12",
+        "Mbpp/462/candidate/13",
+        "Mbpp/462/candidate/14",
+        "Mbpp/462/candidate/15"
+      ],
+      "is_stdlib": true,
+      "task_ids": [
+        "Mbpp/100",
+        "Mbpp/462"
+      ]
+    },
+    "math": {
+      "ast_occurrences": 26,
+      "candidate_count": 26,
+      "candidate_ids": [
+        "Mbpp/120/candidate/02",
+        "Mbpp/245/candidate/06",
+        "Mbpp/274/candidate/01",
+        "Mbpp/274/candidate/03",
+        "Mbpp/274/candidate/08",
+        "Mbpp/274/candidate/11",
+        "Mbpp/274/candidate/13",
+        "Mbpp/274/candidate/14",
+        "Mbpp/274/candidate/15",
+        "Mbpp/312/candidate/00",
+        "Mbpp/312/candidate/01",
+        "Mbpp/312/candidate/02",
+        "Mbpp/312/candidate/03",
+        "Mbpp/312/candidate/04",
+        "Mbpp/312/candidate/05",
+        "Mbpp/312/candidate/06",
+        "Mbpp/312/candidate/07",
+        "Mbpp/312/candidate/08",
+        "Mbpp/312/candidate/09",
+        "Mbpp/312/candidate/10",
+        "Mbpp/312/candidate/11",
+        "Mbpp/312/candidate/12",
+        "Mbpp/312/candidate/13",
+        "Mbpp/312/candidate/14",
+        "Mbpp/312/candidate/15",
+        "Mbpp/422/candidate/08"
+      ],
+      "is_stdlib": true,
+      "task_ids": [
+        "Mbpp/120",
+        "Mbpp/245",
+        "Mbpp/274",
+        "Mbpp/312",
+        "Mbpp/422"
+      ]
+    },
+    "operator": {
+      "ast_occurrences": 1,
+      "candidate_count": 1,
+      "candidate_ids": [
+        "Mbpp/120/candidate/09"
+      ],
+      "is_stdlib": true,
+      "task_ids": [
+        "Mbpp/120"
+      ]
+    },
+    "re": {
+      "ast_occurrences": 19,
+      "candidate_count": 19,
+      "candidate_ids": [
+        "Mbpp/478/candidate/00",
+        "Mbpp/478/candidate/08",
+        "Mbpp/478/candidate/15",
+        "Mbpp/737/candidate/00",
+        "Mbpp/737/candidate/01",
+        "Mbpp/737/candidate/02",
+        "Mbpp/737/candidate/03",
+        "Mbpp/737/candidate/04",
+        "Mbpp/737/candidate/05",
+        "Mbpp/737/candidate/06",
+        "Mbpp/737/candidate/07",
+        "Mbpp/737/candidate/08",
+        "Mbpp/737/candidate/09",
+        "Mbpp/737/candidate/10",
+        "Mbpp/737/candidate/11",
+        "Mbpp/737/candidate/12",
+        "Mbpp/737/candidate/13",
+        "Mbpp/737/candidate/14",
+        "Mbpp/737/candidate/15"
+      ],
+      "is_stdlib": true,
+      "task_ids": [
+        "Mbpp/478",
+        "Mbpp/737"
+      ]
+    },
+    "typing": {
+      "ast_occurrences": 21,
+      "candidate_count": 21,
+      "candidate_ids": [
+        "Mbpp/100/candidate/08",
+        "Mbpp/100/candidate/10",
+        "Mbpp/120/candidate/12",
+        "Mbpp/166/candidate/00",
+        "Mbpp/166/candidate/07",
+        "Mbpp/166/candidate/08",
+        "Mbpp/166/candidate/12",
+        "Mbpp/166/candidate/14",
+        "Mbpp/166/candidate/15",
+        "Mbpp/245/candidate/01",
+        "Mbpp/245/candidate/12",
+        "Mbpp/245/candidate/13",
+        "Mbpp/245/candidate/15",
+        "Mbpp/294/candidate/02",
+        "Mbpp/446/candidate/06",
+        "Mbpp/751/candidate/08",
+        "Mbpp/751/candidate/12",
+        "Mbpp/751/candidate/13",
+        "Mbpp/793/candidate/03",
+        "Mbpp/793/candidate/09",
+        "Mbpp/793/candidate/11"
+      ],
+      "is_stdlib": true,
+      "task_ids": [
+        "Mbpp/100",
+        "Mbpp/120",
+        "Mbpp/166",
+        "Mbpp/245",
+        "Mbpp/294",
+        "Mbpp/446",
+        "Mbpp/751",
+        "Mbpp/793"
+      ]
+    }
+  },
+  "inputs": {
+    "/home/zhangyudong/FDU/paper/Eval/artifacts/runs/e0-v1/raw/tasks.jsonl": "bad83068bef7698dedd53bd23debf422cf90b1111d7bd850012bdf43bde62fa3",
+    "/home/zhangyudong/FDU/paper/Eval/artifacts/runs/e0-v1/raw/tasks.manifest.json": "86313a5ff79c19161c22ef4f33f3d9533991152951ad067705a3ce553bfb1fd7"
+  },
+  "limitations": [
+    "AST imports include conditional and function-local declarations, whether reached or not.",
+    "Dynamic imports, alias-based import calls and runtime module availability are not resolved.",
+    "Relative imports are separately flagged and are not classified as absolute top modules.",
+    "No candidate source, generated assertions, exception details or hidden inputs are included.",
+    "No candidate execution or dependency import is performed by this audit."
+  ],
+  "nonstdlib_candidate_ids": [],
+  "recorded_execution_python_versions": {
+    "3.11.4": 320
+  },
+  "relative_import_candidate_ids": [],
+  "schema_version": "tgselect-execution-audit-v1",
+  "scope": "all frozen visible-execution candidates; no hidden labels read or exclusions applied",
+  "status": "completed",
+  "status_counts": {
+    "assertion_fail": 5752,
+    "pass": 11452,
+    "program_error": 2844
+  },
+  "stdlib_classification": "top module membership in Python 3.11 sys.stdlib_module_names; not an importability test",
+  "tasks": [
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "NameError": 128
+      },
+      "status_counts": {
+        "assertion_fail": 196,
+        "pass": 700,
+        "program_error": 128
+      },
+      "task_id": "Mbpp/446",
+      "test_count": 64
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "NameError": 64,
+        "ValueError": 12
+      },
+      "status_counts": {
+        "assertion_fail": 78,
+        "pass": 870,
+        "program_error": 76
+      },
+      "task_id": "Mbpp/274",
+      "test_count": 64
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "status_counts": {
+        "assertion_fail": 389,
+        "pass": 571,
+        "program_error": 64
+      },
+      "task_id": "Mbpp/478",
+      "test_count": 64
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "IndexError": 4,
+        "NameError": 64
+      },
+      "status_counts": {
+        "assertion_fail": 116,
+        "pass": 840,
+        "program_error": 68
+      },
+      "task_id": "Mbpp/282",
+      "test_count": 64
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "NameError": 128
+      },
+      "status_counts": {
+        "assertion_fail": 369,
+        "pass": 527,
+        "program_error": 128
+      },
+      "task_id": "Mbpp/100",
+      "test_count": 64
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "NameError": 315,
+        "TypeError": 77,
+        "ZeroDivisionError": 88
+      },
+      "status_counts": {
+        "assertion_fail": 220,
+        "pass": 308,
+        "program_error": 480
+      },
+      "task_id": "Mbpp/422",
+      "test_count": 63
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "IndexError": 15,
+        "NameError": 192,
+        "TypeError": 35,
+        "ValueError": 174
+      },
+      "status_counts": {
+        "assertion_fail": 179,
+        "pass": 429,
+        "program_error": 416
+      },
+      "task_id": "Mbpp/294",
+      "test_count": 64
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "NameError": 64,
+        "RecursionError": 1
+      },
+      "status_counts": {
+        "assertion_fail": 733,
+        "pass": 226,
+        "program_error": 65
+      },
+      "task_id": "Mbpp/752",
+      "test_count": 64
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "NameError": 320
+      },
+      "status_counts": {
+        "assertion_fail": 373,
+        "pass": 331,
+        "program_error": 320
+      },
+      "task_id": "Mbpp/245",
+      "test_count": 64
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "TypeError": 9,
+        "ValueError": 30
+      },
+      "status_counts": {
+        "assertion_fail": 238,
+        "pass": 747,
+        "program_error": 39
+      },
+      "task_id": "Mbpp/793",
+      "test_count": 64
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "NameError": 116,
+        "TypeError": 42
+      },
+      "status_counts": {
+        "pass": 770,
+        "program_error": 158
+      },
+      "task_id": "Mbpp/309",
+      "test_count": 58
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "NameError": 512
+      },
+      "status_counts": {
+        "assertion_fail": 120,
+        "pass": 392,
+        "program_error": 512
+      },
+      "task_id": "Mbpp/435",
+      "test_count": 64
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "NameError": 64
+      },
+      "status_counts": {
+        "assertion_fail": 554,
+        "pass": 406,
+        "program_error": 64
+      },
+      "task_id": "Mbpp/772",
+      "test_count": 64
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {},
+      "status_counts": {
+        "assertion_fail": 288,
+        "pass": 480
+      },
+      "task_id": "Mbpp/462",
+      "test_count": 48
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "NameError": 128
+      },
+      "status_counts": {
+        "assertion_fail": 210,
+        "pass": 686,
+        "program_error": 128
+      },
+      "task_id": "Mbpp/166",
+      "test_count": 64
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "RecursionError": 50
+      },
+      "status_counts": {
+        "assertion_fail": 484,
+        "pass": 490,
+        "program_error": 50
+      },
+      "task_id": "Mbpp/392",
+      "test_count": 64
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {},
+      "status_counts": {
+        "assertion_fail": 298,
+        "pass": 726
+      },
+      "task_id": "Mbpp/737",
+      "test_count": 64
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {
+        "NameError": 126,
+        "ValueError": 22
+      },
+      "status_counts": {
+        "assertion_fail": 174,
+        "pass": 686,
+        "program_error": 148
+      },
+      "task_id": "Mbpp/120",
+      "test_count": 63
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {},
+      "status_counts": {
+        "assertion_fail": 445,
+        "pass": 531
+      },
+      "task_id": "Mbpp/312",
+      "test_count": 61
+    },
+    {
+      "candidate_count": 16,
+      "exceptions_counts": {},
+      "status_counts": {
+        "assertion_fail": 288,
+        "pass": 736
+      },
+      "task_id": "Mbpp/751",
+      "test_count": 64
+    }
+  ],
+  "zero_test_task_ids": []
+}

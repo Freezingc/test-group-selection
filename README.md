@@ -4,7 +4,7 @@ An exploratory implementation of **Selecting Candidates for Verification through
 
 The starting research report is in [docs/research/research-report.md](docs/research/research-report.md). It contains hypotheses, not established results. The authorized first implementation covers E0–E1; no paid API auditor or E2 benefit is assumed.
 
-The completed E0 engineering run is in [artifacts/runs/e0-v1/results.md](artifacts/runs/e0-v1/results.md). Its 20 tasks are excluded from E1. Compact per-task indicators and their SHA-256 receipts are committed; all 15 paired coverage comparisons can be recomputed without loading a model or accessing hidden benchmark inputs:
+The experiment assessment is in [docs/experiment-results.md](docs/experiment-results.md). The completed E0 engineering run is in [artifacts/runs/e0-v1/results.md](artifacts/runs/e0-v1/results.md). Its 20 tasks are excluded from E1. Compact per-task indicators and their SHA-256 receipts allow all 15 paired coverage comparisons in each completed run to be recomputed without loading a model or accessing hidden benchmark inputs:
 
 ```bash
 .local/eval-venv/bin/python scripts/check_compact_results.py --run-dir artifacts/runs/e0-v1
@@ -37,7 +37,7 @@ uv pip install --python .local/generation-venv/bin/python -e '.[dev,generation]'
 HF_HUB_DISABLE_XET=1 .local/generation-venv/bin/python scripts/download_model.py
 ```
 
-The actual run reused an existing owned PyTorch environment through `--system-site-packages`; exact versions are in `artifacts/environment/generation.json`. Evaluation dependencies are recorded in `artifacts/environment/requirements-evaluation.txt`. If a host cannot create namespaces, execution fails as infrastructure failure.
+The actual run reused an existing owned PyTorch environment through `--system-site-packages`; exact versions are in `artifacts/environment/generation.json`, including the CUDA 12.6 PyTorch build. Installing the optional dependencies alone does not pin a CUDA wheel index or guarantee identical outputs across hardware. Evaluation dependencies are recorded in `artifacts/environment/requirements-evaluation.txt`. If a host cannot create namespaces, execution fails as infrastructure failure.
 
 ## Run E0
 
@@ -73,11 +73,15 @@ Replay `select` to a new output and compare SHA-256 hashes; generated programs d
 
 After all stages complete, run `scripts/finalize_run.py --run-dir artifacts/runs/e0-v1` with the evaluation interpreter. It checks the hash chain and re-derives summary metrics, then exports usage, task indicators and compact receipts. Resource peaks are observations sampled roughly every 30 seconds; short-lived peaks can be missed.
 
+Install the optional `plots` dependencies and run `scripts/plot_results.py --run-dir artifacts/runs/e0-v1` to export the scientific SVG. The plot uses saved summary intervals and explicitly distinguishes oracle coverage from E2 reviewer accuracy.
+
 After a reliable E0, repeat with `--split e1` and a new run directory. Keep E0 out of the E1 inference denominator. Every comparison uses whole tasks as the sampling unit, with task-paired intervals; the 20 random seeds are averaged within each task before bootstrap.
 
 ## Saved evidence and limits
 
-Version control contains source, protocol, unit tests, environment metadata and compact result artifacts. Large raw generations, execution records and hidden evaluation files remain local under ignored directories, with SHA-256 manifests. A GitHub clone alone does not include these raw records; regenerate them with the pinned protocol or obtain the recorded local archive.
+Version control contains source, protocol, unit tests, environment metadata and compact result artifacts. Raw generations, execution records and hidden outcome files use a separate compressed evidence archive. The archive excludes the official benchmark snapshot, reference implementations, hidden test inputs and credentials. Restore it only from the recorded release asset after verifying the archive SHA-256 against the committed manifest. A clone plus that archive supports replay of selection and reanalysis; independently rerunning hidden evaluation still requires preparing the pinned official dataset.
+
+Use a separate checkout to restore the archive, because its paths reproduce the frozen run directories. Compare each extracted file's SHA-256 against the member list in the archive manifest. The original `generation.jsonl`, `tasks.jsonl` and `selections.jsonl` must remain unchanged. To replay selection, choose a new output such as `.local/replayed-selections.jsonl` and compare its SHA-256 to the run's `selection-replay.json`. The compact checker verifies saved numerical results and does not itself regenerate model samples or execute the official benchmark.
 
 Oracle pair coverage measures available rescue space. It is not an observed real-reviewer accuracy improvement, and finite MBPP+ tests do not prove semantic correctness. Development observations cannot establish a small effect or general novelty. No human-read attestation or independent cross-model research review is claimed.
 

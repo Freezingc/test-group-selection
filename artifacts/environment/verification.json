@@ -11,8 +11,8 @@
         "--tb=short"
       ],
       "exit_code": 0,
-      "seconds": 2.8000723607838154,
-      "stdout": "........................................................................ [ 61%]\n.............................................                            [100%]\n117 passed, 1 skipped in 2.53s\n",
+      "seconds": 3.202333412,
+      "stdout": "........................................................................ [ 60%]\n................................................                         [100%]\n120 passed, 1 skipped in 3.09s\n",
       "stderr": ""
     },
     {
@@ -30,5 +30,10 @@
       "stderr": ""
     }
   ],
-  "scope": "unit/integration checks including actual sandbox and official kernel; not a full natural experiment replication"
+  "scope": "unit/integration checks including actual sandbox and official kernel; not a full natural experiment replication",
+  "report_tools": {
+    "archive_regressions": "3 passed; reproduced failures before fixes",
+    "compact_validation": "artifacts/environment/compact-check-validation.json",
+    "experiment_protocol_changed": false
+  }
 }

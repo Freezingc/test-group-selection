@@ -3,22 +3,51 @@
 import argparse
 import hashlib
 import json
+import math
 from pathlib import Path
 
 import numpy as np
 
 
+SELECTORS = {'uniform', 'aces_c', 'dedup_uniform', 'group_equal', 'group_rep'}
+
+
+def require(condition, message):
+    """Integrity checks must remain active under -O and PYTHONOPTIMIZE."""
+    if not condition:
+        raise ValueError(message)
+
+
+def metric_matches(reported, q, n, context):
+    require(isinstance(reported, dict), f'{context}: missing metric object')
+    denominator = reported.get('n')
+    require(isinstance(denominator, int) and not isinstance(denominator, bool) and denominator == n,
+            f'{context}: denominator n differs from all planned tasks')
+    for key, expected in [('q', float(q)), ('rate', float(q) / n)]:
+        actual = reported.get(key)
+        require(isinstance(actual, (int, float)) and not isinstance(actual, bool) and math.isfinite(actual)
+                and math.isclose(actual, expected, abs_tol=1e-12, rel_tol=0),
+                f'{context}: {key} differs from compact task indicators')
+
+
 def check(run_dir):
+    run_dir = Path(run_dir)
     rows = [json.loads(line) for line in (run_dir / 'task_metrics.jsonl').read_text().splitlines()]
     summary = json.loads((run_dir / 'summary.json').read_text())
     usage = json.loads((run_dir / 'usage.json').read_text())
-    assert hashlib.sha256((run_dir / 'task_metrics.jsonl').read_bytes()).hexdigest() == usage['compact_files']['task_metrics.jsonl']['sha256']
+    require(hashlib.sha256((run_dir / 'task_metrics.jsonl').read_bytes()).hexdigest()
+            == usage['compact_files']['task_metrics.jsonl']['sha256'], 'Compact task-metrics SHA-256 mismatch')
     n = summary['n_tasks']
-    assert len(rows) == len({row['task_id'] for row in rows}) == n
+    require(isinstance(n, int) and not isinstance(n, bool) and n > 0, 'Summary must contain a positive task count')
+    require(usage.get('status') == 'completed' and usage.get('n_tasks') == n,
+            'Usage receipt is incomplete or has a different task count')
+    require(len(rows) == len({row['task_id'] for row in rows}) == n, 'Compact task count/identifiers mismatch')
     planned = json.loads((run_dir / 'tasks.manifest.json').read_text())['planned_task_ids']
-    assert set(planned) == {row['task_id'] for row in rows}
-    assert sum(row['pool_correct'] for row in rows) == summary['pool']['coverage']['q']
-    assert sum(row['usable_candidates'] for row in rows) == summary['pool']['candidate_count']['total']
+    require(len(planned) == n and set(planned) == {row['task_id'] for row in rows}, 'Planned task set mismatch')
+    metric_matches(summary['pool']['coverage'], sum(row['pool_correct'] for row in rows), n, 'Pool coverage')
+    require(sum(row['usable_candidates'] for row in rows) == summary['pool']['candidate_count']['total'],
+            'Candidate count differs from compact records')
+    require(set(summary['selectors']) == SELECTORS, 'Summary must include all five protocol selectors')
     settings = summary['inference']
     rng = np.random.default_rng(settings['seed'])
     resamples = rng.integers(0, n, size=(settings['bootstrap_replicates'], n))
@@ -26,47 +55,61 @@ def check(run_dir):
     for selector, reported in summary['selectors'].items():
         values = [row['selectors'][selector] for row in rows]
         base = np.array([value['base_correct'] for value in values])
-        assert int(base.sum()) == reported['base_accuracy']['q']
+        metric_matches(reported['base_accuracy'], int(base.sum()), n, f'{selector}/base_accuracy')
         coverage = {method: np.array([value['methods'][method]['coverage'] for value in values])
                     for method in ['top2', 'diverse', 'perturbed', 'raw_w']}
         for row, selected in zip(rows, values):
             truth = {candidate['candidate_id']: candidate['correct'] for candidate in row['candidates']}
-            assert row['pool_correct'] == int(any(truth.values()))
-            assert selected['base_correct'] == truth.get(selected['base_id'], 0)
+            require(row['pool_correct'] == int(any(truth.values())), f"{row['task_id']}: pool indicator differs from labels")
+            require(selected['base_correct'] == truth.get(selected['base_id'], 0),
+                    f"{row['task_id']}/{selector}: baseline indicator differs from labels")
             for method, pair in selected['methods'].items():
-                assert pair['coverage'] == int(any(truth[cid] for cid in pair['selected_ids']))
-                assert len(pair['selected_ids']) == len(set(pair['selected_ids']))
+                require(pair['coverage'] == int(any(truth[cid] for cid in pair['selected_ids'])),
+                        f"{row['task_id']}/{selector}/{method}: coverage differs from selected labels")
+                require(len(pair['selected_ids']) == len(set(pair['selected_ids'])),
+                        f"{row['task_id']}/{selector}/{method}: duplicate selected candidate")
                 if truth:
-                    assert selected['base_id'] in pair['selected_ids']
+                    require(selected['base_id'] in pair['selected_ids'],
+                            f"{row['task_id']}/{selector}/{method}: baseline missing from review set")
                 if method != 'raw_w':
-                    assert len(pair['selected_ids']) <= 2
-            assert set(selected['random_coverage']) == {str(seed) for seed in range(20)}
+                    require(len(pair['selected_ids']) <= 2, f"{row['task_id']}/{selector}/{method}: review set exceeds k=2")
+            require(set(selected['random_coverage']) == {str(seed) for seed in range(20)},
+                    f"{row['task_id']}/{selector}: missing or extra random coverage seed")
+            require(set(selected['random_selected_ids']) == set(selected['random_coverage']),
+                    f"{row['task_id']}/{selector}: random selection seed set mismatch")
             for seed, ids in selected['random_selected_ids'].items():
-                assert selected['random_coverage'][seed] == int(any(truth[cid] for cid in ids))
+                require(selected['random_coverage'][seed] == int(any(truth[cid] for cid in ids)),
+                        f"{row['task_id']}/{selector}/random_{seed}: coverage differs from selected labels")
         for method in ['top2', 'diverse', 'perturbed']:
             counts = reported['methods'][method]
             chosen = coverage[method]
             top2 = coverage['top2']
-            assert int(chosen.sum()) == counts['coverage']['q']
-            assert int(np.sum(chosen * (1 - base))) == counts['u']['q']
+            metric_matches(counts['coverage'], int(chosen.sum()), n, f'{selector}/{method}/coverage')
+            metric_matches(counts['u'], int(np.sum(chosen * (1 - base))), n, f'{selector}/{method}/u')
             pairs = {'gain': (chosen == 1) & (top2 == 0), 'loss': (chosen == 0) & (top2 == 1),
                      'both': (chosen == 1) & (top2 == 1), 'neither': (chosen == 0) & (top2 == 0)}
             for key, indicator in pairs.items():
-                assert int(indicator.sum()) == counts['vs_top2'][key]['q']
+                metric_matches(counts['vs_top2'][key], int(indicator.sum()), n, f'{selector}/{method}/vs_top2/{key}')
         random = np.array([[value['random_coverage'][str(seed)] for value in values] for seed in range(20)])
+        require(reported['random']['n_seeds'] == 20 and reported['random']['seeds'] == list(range(20))
+                and len(reported['random']['coverage_by_seed']) == 20, f'{selector}: reported random seeds mismatch')
         for seed in range(20):
-            assert int(random[seed].sum()) == reported['random']['coverage_by_seed'][seed]['q']
+            seed_metric = reported['random']['coverage_by_seed'][seed]
+            require(seed_metric.get('seed') == seed, f'{selector}: reported seed ordering mismatch')
+            metric_matches(seed_metric, int(random[seed].sum()), n, f'{selector}/random_{seed}/coverage')
         random_mean = random.mean(axis=0)
-        assert np.isclose(random_mean.sum(), reported['random']['coverage_mean']['q'], atol=1e-12, rtol=0)
-        assert int(coverage['raw_w'].sum()) == reported['raw_w']['coverage']['q']
+        metric_matches(reported['random']['coverage_mean'], random_mean.sum(), n, f'{selector}/random_mean/coverage')
+        metric_matches(reported['raw_w']['coverage'], int(coverage['raw_w'].sum()), n, f'{selector}/raw_w/coverage')
         for key in ['baseline_wrong_pool_correct', 'identical_row_blind_spot', 'no_alternative_winner']:
-            assert sum(value[key] for value in values) == reported['mechanisms'][key]['q']
+            metric_matches(reported['mechanisms'][key], sum(value[key] for value in values), n, f'{selector}/{key}')
         for key, reference in [('top2', coverage['top2']), ('diverse', coverage['diverse']), ('random_mean', random_mean)]:
             delta = coverage['perturbed'] - reference
             interval = np.percentile(delta[resamples].mean(axis=1), [2.5, 97.5])
             target = reported['paired_differences']['perturbed_minus_' + key]
-            assert np.isclose(delta.mean(), target['difference'], atol=1e-12, rtol=0)
-            assert np.allclose(interval, target['ci95'], atol=1e-12, rtol=0)
+            require(target.get('n') == n and target.get('unit') == 'task', f'{selector}/{key}: paired task denominator mismatch')
+            require(np.isclose(delta.mean(), target['difference'], atol=1e-12, rtol=0),
+                    f'{selector}/{key}: paired difference mismatch')
+            require(np.allclose(interval, target['ci95'], atol=1e-12, rtol=0), f'{selector}/{key}: paired interval mismatch')
             comparisons += 1
     return {'status': 'matched', 'n_tasks': n, 'paired_comparisons': comparisons,
             'scope': 'Independent arithmetic from compact task indicators; does not rerun generation, selection or hidden evaluation'}

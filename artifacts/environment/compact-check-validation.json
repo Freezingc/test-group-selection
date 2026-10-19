@@ -1,0 +1,101 @@
+{
+  "scope": "Synthetic mutations of completed E0 compact evidence only; original files untouched",
+  "scratch": "/home/zhangyudong/FDU/paper/Eval/.local/compact-check-fix-9428el47",
+  "before": [
+    {
+      "case": "wrong_coverage_rate",
+      "mode": "ordinary",
+      "exit_code": 0,
+      "stdout": "{\"n_tasks\": 20, \"paired_comparisons\": 15, \"scope\": \"Independent arithmetic from compact task indicators; does not rerun generation, selection or hidden evaluation\", \"status\": \"matched\"}",
+      "stderr_tail": ""
+    },
+    {
+      "case": "wrong_metric_n",
+      "mode": "ordinary",
+      "exit_code": 0,
+      "stdout": "{\"n_tasks\": 20, \"paired_comparisons\": 15, \"scope\": \"Independent arithmetic from compact task indicators; does not rerun generation, selection or hidden evaluation\", \"status\": \"matched\"}",
+      "stderr_tail": ""
+    },
+    {
+      "case": "wrong_integrity_hash",
+      "mode": "optimized",
+      "exit_code": 0,
+      "stdout": "{\"n_tasks\": 20, \"paired_comparisons\": 15, \"scope\": \"Independent arithmetic from compact task indicators; does not rerun generation, selection or hidden evaluation\", \"status\": \"matched\"}",
+      "stderr_tail": ""
+    },
+    {
+      "case": "wrong_integrity_hash",
+      "mode": "env_optimized",
+      "exit_code": 0,
+      "stdout": "{\"n_tasks\": 20, \"paired_comparisons\": 15, \"scope\": \"Independent arithmetic from compact task indicators; does not rerun generation, selection or hidden evaluation\", \"status\": \"matched\"}",
+      "stderr_tail": ""
+    }
+  ],
+  "after": [
+    {
+      "case": "wrong_coverage_rate",
+      "mode": "ordinary",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr_tail": ", f'{selector}/{method}/coverage')\n  File \"/home/zhangyudong/FDU/paper/Eval/scripts/check_compact_results.py\", line 28, in metric_matches\n    require(isinstance(actual, (int, float)) and not isinstance(actual, bool) and math.isfinite(actual)\n  File \"/home/zhangyudong/FDU/paper/Eval/scripts/check_compact_results.py\", line 18, in require\n    raise ValueError(message)\nValueError: uniform/perturbed/coverage: rate differs from compact task indicators\n"
+    },
+    {
+      "case": "wrong_metric_n",
+      "mode": "ordinary",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr_tail": ", f'{selector}/{method}/coverage')\n  File \"/home/zhangyudong/FDU/paper/Eval/scripts/check_compact_results.py\", line 24, in metric_matches\n    require(isinstance(denominator, int) and not isinstance(denominator, bool) and denominator == n,\n  File \"/home/zhangyudong/FDU/paper/Eval/scripts/check_compact_results.py\", line 18, in require\n    raise ValueError(message)\nValueError: uniform/perturbed/coverage: denominator n differs from all planned tasks\n"
+    },
+    {
+      "case": "wrong_integrity_hash",
+      "mode": "optimized",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr_tail": "int(json.dumps(check(args.run_dir), sort_keys=True))\n                     ^^^^^^^^^^^^^^^^^^^\n  File \"/home/zhangyudong/FDU/paper/Eval/scripts/check_compact_results.py\", line 38, in check\n    require(hashlib.sha256((run_dir / 'task_metrics.jsonl').read_bytes()).hexdigest()\n  File \"/home/zhangyudong/FDU/paper/Eval/scripts/check_compact_results.py\", line 18, in require\n    raise ValueError(message)\nValueError: Compact task-metrics SHA-256 mismatch\n"
+    },
+    {
+      "case": "wrong_integrity_hash",
+      "mode": "env_optimized",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr_tail": "int(json.dumps(check(args.run_dir), sort_keys=True))\n                     ^^^^^^^^^^^^^^^^^^^\n  File \"/home/zhangyudong/FDU/paper/Eval/scripts/check_compact_results.py\", line 38, in check\n    require(hashlib.sha256((run_dir / 'task_metrics.jsonl').read_bytes()).hexdigest()\n  File \"/home/zhangyudong/FDU/paper/Eval/scripts/check_compact_results.py\", line 18, in require\n    raise ValueError(message)\nValueError: Compact task-metrics SHA-256 mismatch\n"
+    }
+  ],
+  "genuine_e0": [
+    {
+      "mode": "ordinary",
+      "exit_code": 0,
+      "stdout": "{\"n_tasks\": 20, \"paired_comparisons\": 15, \"scope\": \"Independent arithmetic from compact task indicators; does not rerun generation, selection or hidden evaluation\", \"status\": \"matched\"}",
+      "stderr_tail": ""
+    },
+    {
+      "mode": "optimized",
+      "exit_code": 0,
+      "stdout": "{\"n_tasks\": 20, \"paired_comparisons\": 15, \"scope\": \"Independent arithmetic from compact task indicators; does not rerun generation, selection or hidden evaluation\", \"status\": \"matched\"}",
+      "stderr_tail": ""
+    },
+    {
+      "mode": "env_optimized",
+      "exit_code": 0,
+      "stdout": "{\"n_tasks\": 20, \"paired_comparisons\": 15, \"scope\": \"Independent arithmetic from compact task indicators; does not rerun generation, selection or hidden evaluation\", \"status\": \"matched\"}",
+      "stderr_tail": ""
+    }
+  ],
+  "metric_mutation_checks": {
+    "metric_objects": 221,
+    "fields_per_metric": [
+      "q",
+      "n",
+      "rate"
+    ],
+    "rejected": 663,
+    "unexpected_passes": []
+  },
+  "original_e0_unchanged": {
+    "task_metrics.jsonl": true,
+    "summary.json": true,
+    "usage.json": true,
+    "tasks.manifest.json": true
+  },
+  "checker_sha256": "ff239e8fcce685c25ad5a4c75f6d6794ae248e4390c254e7bd82984820dbe6fb"
+}
